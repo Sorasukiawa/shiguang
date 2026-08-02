@@ -15,21 +15,21 @@
 
 ## 下载
 
-### v0.1.12 · Apple Silicon Mac
+### v0.1.13 · Apple Silicon Mac
 
 当前公开内测包仅适用于搭载 Apple M 系列芯片的 Mac。Intel Mac 与 Windows 版尚未提供公开下载。
 
-- [下载拾光 v0.1.12 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.12)
+- [下载拾光 v0.1.13 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.13)
 - [查看全部版本](https://github.com/Sorasukiawa/shiguang/releases)
 
 如果不确定 Mac 的芯片类型，请先打开左上角 ** → 关于本机**，查看“芯片”一项。
 
-## v0.1.12 更新内容
+## v0.1.13 更新内容
 
-- 修复自建分组右侧“三个点”菜单可能被项目列表裁切的问题，菜单会根据窗口空间自动选择展开方向。
-- 优化项目工具栏的响应式布局，缩放 App 窗口时，状态、分组和搜索控件不再突然跳位。
-- 调整项目切换分组时的卡片重排动效，移动更从容、无多余回弹，也不会因打开菜单重复触发。
-- 完善键盘操作：菜单打开后自动聚焦可用操作，按 `Escape` 关闭后焦点回到原按钮。
+- 新增项目回收站，项目可以安全移入、恢复或彻底删除；默认操作不会移动或删除原项目文件夹和素材。
+- 修复归档中的“仅标记完成”，现在无需外接项目盘在线即可只更新项目状态。
+- 修复设置、拷卡和侧栏提示的裁切、命中不稳定及长路径显示问题。
+- 修复快速移动鼠标时提示框叠加闪黑或刚出现就消失的问题，同时保留完整键盘操作。
 
 ## 拾光能做什么
 
@@ -53,7 +53,7 @@ xxHash64 在这里用于检测拷贝内容是否一致，不是身份认证或�
 
 ## macOS 首次打开
 
-v0.1.12 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
+v0.1.13 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
 
 1. 只从 [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) 的 Releases 下载 DMG。
 2. 打开 DMG，将“拾光”拖入“Applications / 应用程序”文件夹。
