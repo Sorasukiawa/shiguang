@@ -7,7 +7,7 @@
 <p align="center">把每一次拷卡，变成可确认、可追溯的流程。</p>
 
 <p align="center">
-  面向<strong>摄影师、摄像师及摄影摄像团队</strong>的本地拷卡、双备份、校验与项目归档工具。
+  面向<strong>摄影师、摄像师、个人创作者及摄影摄像团队</strong>的本地拷卡、双备份、校验与项目归档工具。
 </p>
 
 > [!IMPORTANT]
@@ -15,21 +15,22 @@
 
 ## 下载
 
-### v0.1.13 · Apple Silicon Mac
+### v0.1.14 · Apple Silicon Mac
 
 当前公开内测包仅适用于搭载 Apple M 系列芯片的 Mac。Intel Mac 与 Windows 版尚未提供公开下载。
 
-- [下载拾光 v0.1.13 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.13)
+- [下载拾光 v0.1.14 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.14)
 - [查看全部版本](https://github.com/Sorasukiawa/shiguang/releases)
 
 如果不确定 Mac 的芯片类型，请先打开左上角 ** → 关于本机**，查看“芯片”一项。
 
-## v0.1.13 更新内容
+## v0.1.14 更新内容
 
-- 新增项目回收站，项目可以安全移入、恢复或彻底删除；默认操作不会移动或删除原项目文件夹和素材。
-- 修复归档中的“仅标记完成”，现在无需外接项目盘在线即可只更新项目状态。
-- 修复设置、拷卡和侧栏提示的裁切、命中不稳定及长路径显示问题。
-- 修复快速移动鼠标时提示框叠加闪黑或刚出现就消失的问题，同时保留完整键盘操作。
+- 修复项目文件夹已经不存在时，“删除项目和文件”可能无法完成的问题。
+- 删除前继续核对原项目盘及卷身份 UUID；原盘离线或身份不匹配时仍会安全停止。
+- 删除中途失败后会保留真实操作阶段和用户勾选，重试不会重复移入回收站。
+- 加强目录在删除过程中重新出现时的归属验证，只有确认属于该项目的目录才会移入系统废纸篓。
+- 重新整理设置页“当前版本”的排版，更新状态、按钮与版本说明不再错位或产生末尾孤字。
 
 ## 拾光能做什么
 
@@ -53,7 +54,7 @@ xxHash64 在这里用于检测拷贝内容是否一致，不是身份认证或�
 
 ## macOS 首次打开
 
-v0.1.13 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
+v0.1.14 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
 
 1. 只从 [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) 的 Releases 下载 DMG。
 2. 打开 DMG，将“拾光”拖入“Applications / 应用程序”文件夹。
