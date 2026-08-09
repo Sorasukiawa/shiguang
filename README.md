@@ -15,22 +15,22 @@
 
 ## 下载
 
-### v0.1.14 · Apple Silicon Mac
+### v0.1.15 · Apple Silicon Mac
 
 当前公开内测包仅适用于搭载 Apple M 系列芯片的 Mac。Intel Mac 与 Windows 版尚未提供公开下载。
 
-- [下载拾光 v0.1.14 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.14)
+- [下载拾光 v0.1.15 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.15)
 - [查看全部版本](https://github.com/Sorasukiawa/shiguang/releases)
 
 如果不确定 Mac 的芯片类型，请先打开左上角 ** → 关于本机**，查看“芯片”一项。
 
-## v0.1.14 更新内容
+## v0.1.15 更新内容
 
-- 修复项目文件夹已经不存在时，“删除项目和文件”可能无法完成的问题。
-- 删除前继续核对原项目盘及卷身份 UUID；原盘离线或身份不匹配时仍会安全停止。
-- 删除中途失败后会保留真实操作阶段和用户勾选，重试不会重复移入回收站。
-- 加强目录在删除过程中重新出现时的归属验证，只有确认属于该项目的目录才会移入系统废纸篓。
-- 重新整理设置页“当前版本”的排版，更新状态、按钮与版本说明不再错位或产生末尾孤字。
+- 修复 ExFAT 外接工作盘删除项目时可能出现 `Operation not supported (os error 45)` 的问题。
+- 明确区分“拾光回收站”与 macOS“系统废纸篓”：第一次删除只隐藏项目记录并保留素材，只有彻底删除时才可选择处理项目文件夹。
+- 强化删除中断、重试和目录归属保护，未完成的文件处理不会被误报为成功，也不会把项目错误恢复为活动状态。
+- 重新校准传输进度数字：一位数、两位数与百分号真正居中，变化字形加入参考视频式模糊、双影与纵向衰减抖动。
+- 未变化的数字和百分号保持清晰稳定，并继续支持 macOS“减弱动态效果”。
 
 ## 拾光能做什么
 
@@ -54,7 +54,7 @@ xxHash64 在这里用于检测拷贝内容是否一致，不是身份认证或�
 
 ## macOS 首次打开
 
-v0.1.14 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
+v0.1.15 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
 
 1. 只从 [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) 的 Releases 下载 DMG。
 2. 打开 DMG，将“拾光”拖入“Applications / 应用程序”文件夹。
