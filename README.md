@@ -15,22 +15,23 @@
 
 ## 下载
 
-### v0.1.15 · Apple Silicon Mac
+### v0.1.16 · Apple Silicon Mac
 
 当前公开内测包仅适用于搭载 Apple M 系列芯片的 Mac。Intel Mac 与 Windows 版尚未提供公开下载。
 
-- [下载拾光 v0.1.15 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.15)
+- [下载拾光 v0.1.16 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.16)
 - [查看全部版本](https://github.com/Sorasukiawa/shiguang/releases)
 
 如果不确定 Mac 的芯片类型，请先打开左上角 ** → 关于本机**，查看“芯片”一项。
 
-## v0.1.15 更新内容
+## v0.1.16 更新内容
 
-- 修复 ExFAT 外接工作盘删除项目时可能出现 `Operation not supported (os error 45)` 的问题。
-- 明确区分“拾光回收站”与 macOS“系统废纸篓”：第一次删除只隐藏项目记录并保留素材，只有彻底删除时才可选择处理项目文件夹。
-- 强化删除中断、重试和目录归属保护，未完成的文件处理不会被误报为成功，也不会把项目错误恢复为活动状态。
-- 传输进度数字加入柔和的模糊翻页动效，连续变化时更顺滑，同时保持清晰易读。
-- 未变化的数字和百分号保持清晰稳定，并继续支持 macOS“减弱动态效果”。
+- 新建项目时可以选择“简单存放”或“按卡分开”：既能减少不必要的目录层级，也能用 R01、R02 区分每张存储卡。
+- 视频、照片和混合项目的内置预设统一增加独立的 `LOGO` 素材目录。
+- 拷卡页只有在明确选择项目后才会准备拷贝，不再自动绑定列表中的第一个项目。
+- 项目回收站名称已简化为“回收站”，仍与 macOS“系统废纸篓”明确区分。
+- 优化素材存放方式的切换反馈，并继续支持 macOS“减弱动态效果”。
+- 已有项目继续沿用原来的目录规则；如果项目结构信息异常，拾光会先停止拷卡，不会猜测保存位置。
 
 ## 拾光能做什么
 
@@ -54,7 +55,7 @@ xxHash64 在这里用于检测拷贝内容是否一致，不是身份认证或�
 
 ## macOS 首次打开
 
-v0.1.15 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
+v0.1.16 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
 
 1. 只从 [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) 的 Releases 下载 DMG。
 2. 打开 DMG，将“拾光”拖入“Applications / 应用程序”文件夹。
