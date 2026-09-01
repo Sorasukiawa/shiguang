@@ -10,23 +10,23 @@
 
 ## Download
 
-### v0.1.16 · Apple Silicon Mac
+### v0.1.17 · Apple Silicon Mac
 
 The current public beta is available only for an Apple Silicon Mac with an Apple M-series chip. Intel Mac and Windows builds are not yet available for public download.
 
-- [Download Shiguang v0.1.16 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.16)
+- [Download Shiguang v0.1.17 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.17)
 - [View all releases](https://github.com/Sorasukiawa/shiguang/releases)
 
 If you are unsure which chip your Mac uses, open ** → About This Mac** and check the Chip field.
 
-## What changed in v0.1.16
+## What changed in v0.1.17
 
-- New projects can use either a simpler folder layout or separate card folders such as R01 and R02.
-- Built-in video, photo, and mixed-project presets now include a dedicated `LOGO` asset folder.
-- The offload screen prepares a copy only after you explicitly select a project; it no longer selects the first project automatically.
-- The in-app project recycle area now has a shorter name while remaining distinct from the macOS system Trash.
-- Storage-layout switching has clearer feedback and continues to respect macOS Reduce Motion.
-- Existing projects retain their original folder rules. If project-structure metadata is missing or invalid, Shiguang stops before copying instead of guessing a destination.
+- Shiguang now uses the new warm-gold “captured light” mark across the app, DMG, and public download page.
+- Full-verification issues now appear in the human-readable report, so a failed job cannot still look successful there.
+- Stricter source-card safeguards recheck that media still belongs to the selected card before opening or retrying it, preventing accidental reads outside the card.
+- When many cards from one camera position exhaust the numbered folders, the next card uses a separate safe folder instead of being mixed into an existing one.
+- The offload screen now clearly asks for a project when none is selected, without showing a false first selection or “Scanning”.
+- Project-archive progress updates more promptly and resynchronizes when the page returns, reducing delay and background queries during long archives.
 
 ## What Shiguang does
 
@@ -50,7 +50,7 @@ Here, xxHash64 detects whether copied content is identical; it is not authentica
 
 ## First launch on macOS
 
-The v0.1.16 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
+The v0.1.17 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
 
 1. Download the DMG only from the [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) Releases page.
 2. Open the DMG and drag Shiguang into **Applications**.

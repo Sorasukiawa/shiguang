@@ -10,23 +10,23 @@
 
 ## 下載
 
-### v0.1.16 · Apple Silicon Mac
+### v0.1.17 · Apple Silicon Mac
 
 目前公開內測版只適用於搭載 Apple M 系列晶片的 Mac（Apple Silicon Mac）。Intel Mac 與 Windows 版尚未提供公開下載。
 
-- [下載拾光 v0.1.16 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.16)
+- [下載拾光 v0.1.17 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.17)
 - [查看所有版本](https://github.com/Sorasukiawa/shiguang/releases)
 
 如果不確定 Mac 的晶片類型，請開啟左上角 ** → 關於這台 Mac**，查看「晶片」欄位。
 
-## v0.1.16 更新內容
+## v0.1.17 更新內容
 
-- 建立專案時可選擇「簡單存放」或「依卡片分開」：可減少不必要的資料夾層級，也可用 R01、R02 區分每張記憶卡。
-- 影片、照片與混合專案的內建預設，都新增獨立的 `LOGO` 素材資料夾。
-- 只有在明確選定專案後，轉存頁面才會準備複製，不再自動綁定清單中的第一個專案。
-- 專案資源回收筒的名稱已簡化為「資源回收筒」，仍與 macOS 的「系統垃圾桶」清楚區分。
-- 改善素材存放方式的切換回饋，並持續支援 macOS「減少動態效果」。
-- 現有專案繼續使用原本的資料夾規則；若專案結構資訊異常，拾光會先停止轉存，不會猜測儲存位置。
+- 採用全新的暖金色「收光」Logo，App、DMG 與公開下載頁使用同一套品牌圖示。
+- 完整檢驗發現的問題現在會寫入可讀報告，避免工作失敗時報告看起來仍像成功。
+- 強化來源記憶卡的異常路徑攔截；素材開啟或重試前都會再次確認仍在已選記憶卡內，避免意外讀取卡外檔案。
+- 連續處理大量同機位記憶卡時，卷號資料夾達到上限後會改用獨立安全資料夾，不會把新卡混入既有資料夾。
+- 轉存頁尚未選擇專案時會清楚提示，不再顯示假選取的第一個專案或「正在掃描」。
+- 專案封存進度回饋更即時，頁面恢復後也會自動重新同步，減少長時間封存時的等待與背景查詢。
 
 ## 拾光可以做什麼
 
@@ -50,7 +50,7 @@ xxHash64 在這裡用來檢測複製內容是否一致，不是身分驗證或�
 
 ## macOS 首次開啟
 
-v0.1.16 尚未使用 Apple Developer ID 簽署，也尚未通過 Apple 公證。macOS 可能因此擋下首次啟動：
+v0.1.17 尚未使用 Apple Developer ID 簽署，也尚未通過 Apple 公證。macOS 可能因此擋下首次啟動：
 
 1. 只從 [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) 的 Releases 下載 DMG。
 2. 開啟 DMG，將「拾光」拖曳到「Applications / 應用程式」資料夾。

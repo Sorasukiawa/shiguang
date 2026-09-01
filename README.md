@@ -10,23 +10,23 @@
 
 ## 下载
 
-### v0.1.16 · Apple Silicon Mac
+### v0.1.17 · Apple Silicon Mac
 
 当前公开内测包仅适用于搭载 Apple M 系列芯片的 Mac（Apple Silicon Mac）。Intel Mac 与 Windows 版尚未提供公开下载。
 
-- [下载拾光 v0.1.16 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.16)
+- [下载拾光 v0.1.17 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.17)
 - [查看全部版本](https://github.com/Sorasukiawa/shiguang/releases)
 
 如果不确定 Mac 的芯片类型，请打开左上角 ** → 关于本机**，查看“芯片”一项。
 
-## v0.1.16 更新内容
+## v0.1.17 更新内容
 
-- 新建项目时可选择“简单存放”或“按卡分开”：可减少目录层级，也可用 R01、R02 区分每张存储卡。
-- 视频、照片和混合项目的内置预设统一增加独立的 `LOGO` 素材目录。
-- 拷卡页只有在明确选择项目后才准备拷贝，不再自动绑定列表中的第一个项目。
-- 项目回收站名称简化为“回收站”，仍与 macOS“系统废纸篓”明确区分。
-- 优化素材存放方式的切换反馈，并继续支持 macOS“减弱动态效果”。
-- 已有项目继续沿用原来的目录规则；如果结构信息异常，拾光会先停止拷卡，不会猜测保存位置。
+- 采用全新的暖金色“收光”Logo，App、DMG 与公开下载页使用同一套品牌图标。
+- 完整校验发现的问题现在会写入可读报告，避免任务失败时报告看起来仍像成功。
+- 加强来源卡异常路径拦截；素材打开或重试前都会再次确认仍在已选存储卡内，避免意外读取卡外文件。
+- 连续处理大量同机位存储卡时，卷号目录达到上限后会改用独立安全目录，不会把新卡混入已有目录。
+- 拷卡页未选择项目时会明确提示，不再显示伪选中的第一个项目或“正在扫描”。
+- 项目归档进度反馈更及时，并在页面恢复后自动重新同步，减少长时间归档时的等待与后台查询。
 
 ## 拾光能做什么
 
@@ -50,7 +50,7 @@ xxHash64 用于检测拷贝内容是否一致，不是身份认证或加密签�
 
 ## macOS 首次打开
 
-v0.1.16 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
+v0.1.17 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
 
 1. 只从 [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) 的 Releases 下载 DMG。
 2. 打开 DMG，将“拾光”拖入“Applications / 应用程序”文件夹。
