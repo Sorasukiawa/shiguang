@@ -11,11 +11,11 @@
 
 ## Download
 
-### v0.1.18 · Apple Silicon Mac
+### v0.1.19 · Apple Silicon Mac
 
 The current public beta is available only for an Apple Silicon Mac with an Apple M-series chip. Intel Mac and Windows builds are not yet available for public download.
 
-- [Download Shiguang v0.1.18 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.18)
+- [Download Shiguang v0.1.19 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.19)
 - [View all releases](https://github.com/Sorasukiawa/shiguang/releases)
 
 If you are unsure which chip your Mac uses, open ** → About This Mac** and check the Chip field.
@@ -53,7 +53,7 @@ Here, xxHash64 detects whether copied content is identical; it is not authentica
 
 ## First launch on macOS
 
-The v0.1.18 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
+The v0.1.19 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
 
 1. Download the DMG only from the [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) Releases page.
 2. Open the DMG and drag Shiguang into **Applications**.
