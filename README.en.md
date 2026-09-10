@@ -10,23 +10,25 @@
 
 ## Download
 
-### v0.1.17 · Apple Silicon Mac
+### v0.1.18 · Apple Silicon Mac
 
 The current public beta is available only for an Apple Silicon Mac with an Apple M-series chip. Intel Mac and Windows builds are not yet available for public download.
 
-- [Download Shiguang v0.1.17 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.17)
+- [Download Shiguang v0.1.18 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.18)
 - [View all releases](https://github.com/Sorasukiawa/shiguang/releases)
 
 If you are unsure which chip your Mac uses, open ** → About This Mac** and check the Chip field.
 
-## What changed in v0.1.17
+## What changed in v0.1.18
 
-- Shiguang now uses the new warm-gold “captured light” mark across the app, DMG, and public download page.
-- Full-verification issues now appear in the human-readable report, so a failed job cannot still look successful there.
-- Stricter source-card safeguards recheck that media still belongs to the selected card before opening or retrying it, preventing accidental reads outside the card.
-- When many cards from one camera position exhaust the numbered folders, the next card uses a separate safe folder instead of being mixed into an existing one.
-- The offload screen now clearly asks for a project when none is selected, without showing a false first selection or “Scanning”.
-- Project-archive progress updates more promptly and resynchronizes when the page returns, reducing delay and background queries during long archives.
+- Project lists and details show loading, failure, and retry states. Slow disk queries no longer block task-progress initialization, and failed refreshes preserve the existing list.
+- Preset read failures preserve the original file. In-memory presets change only after saving succeeds, and unchanged presets are no longer rewritten on every launch.
+- NAS archives gain persistent task records, re-verification of the original plan, and a new-task recovery entry after failure. Expandable history identifies each attempt's folder.
+- MHL manifests now handle required fields and special characters correctly. Interrupted-job checks, resumed-copy feedback, and dual-destination result descriptions are clearer.
+- Stalled update downloads time out. Invalidated packages can be checked again, and stale notices are removed. Installation and restart remain blocked during offload or archiving.
+- Project details fit smaller windows better, with improved layout transitions and page language declarations for all four languages.
+
+The public v0.1.16 → v0.1.18 upgrade passed download, installation, and automatic restart checks from Settings on this Mac. The public v0.1.17 build has no update channel and cannot upgrade from Settings: finish running jobs, quit Shiguang, and replace it using this Release’s DMG. v0.1.18 includes the update channel. Project records, settings, and custom presets were preserved in this upgrade; the built-in video preset gained its photo-media route. First installation on a clean Mac remains unverified.
 
 ## What Shiguang does
 
@@ -50,7 +52,7 @@ Here, xxHash64 detects whether copied content is identical; it is not authentica
 
 ## First launch on macOS
 
-The v0.1.17 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
+The v0.1.18 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
 
 1. Download the DMG only from the [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) Releases page.
 2. Open the DMG and drag Shiguang into **Applications**.
