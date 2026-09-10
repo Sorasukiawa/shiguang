@@ -2,6 +2,7 @@
 
 <p align="center"><img src="./shiguang-mark.svg" width="88" height="88" alt="拾光アイコン"></p>
 <h1 align="center">拾光 Shiguang</h1>
+<p align="center"><a href="https://getshiguang.pages.dev/">公式サイト</a> · <a href="https://getshiguang.pages.dev/guides/">使い方ガイド</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">問題を報告</a></p>
 <p align="center">メディアの取り込みを、確認でき、追跡できるフローへ。</p>
 <p align="center"><strong>フォトグラファー、映像制作者、個人クリエイター、制作チーム</strong>向けの、ローカルで動作するメディア取り込み・二重バックアップ・検証・プロジェクトアーカイブツールです。</p>
 

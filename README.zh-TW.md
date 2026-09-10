@@ -2,6 +2,7 @@
 
 <p align="center"><img src="./shiguang-mark.svg" width="88" height="88" alt="拾光圖示"></p>
 <h1 align="center">拾光 Shiguang</h1>
+<p align="center"><a href="https://getshiguang.pages.dev/">官網</a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">問題回報</a></p>
 <p align="center">讓每一次轉存記憶卡，都成為可確認、可追溯的流程。</p>
 <p align="center">為<strong>攝影師、影像工作者、獨立創作者與影像團隊</strong>打造的本機素材轉存、二重備份、檢驗與專案封存工具。</p>
 

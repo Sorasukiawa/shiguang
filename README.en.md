@@ -2,6 +2,7 @@
 
 <p align="center"><img src="./shiguang-mark.svg" width="88" height="88" alt="Shiguang icon"></p>
 <h1 align="center">拾光 Shiguang</h1>
+<p align="center"><a href="https://getshiguang.pages.dev/">Website</a> · <a href="https://getshiguang.pages.dev/guides/">User guides</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">Report an issue</a></p>
 <p align="center">Make every media offload verifiable and traceable.</p>
 <p align="center">A local-first tool for <strong>photographers, filmmakers, independent creators, and production teams</strong>, covering media offload, dual-destination backup, verification, and project archive workflows.</p>
 

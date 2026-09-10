@@ -2,6 +2,7 @@
 
 <p align="center"><img src="./shiguang-mark.svg" width="88" height="88" alt="拾光图标"></p>
 <h1 align="center">拾光 Shiguang</h1>
+<p align="center"><a href="https://getshiguang.pages.dev/">官网</a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">问题反馈</a></p>
 <p align="center">把每一次拷卡，变成可确认、可追溯的流程。</p>
 <p align="center">面向<strong>摄影师、摄像师、个人创作者及摄影摄像团队</strong>的本地拷卡、双备份、校验与项目归档工具。</p>
 
