@@ -1,50 +1,47 @@
 [简体中文](./README.md) | [繁體中文](./README.zh-TW.md) | [English](./README.en.md) | [日本語](./README.ja.md)
 
-<p align="center"><img src="./shiguang-mark.svg" width="88" height="88" alt="拾光圖示"></p>
-<h1 align="center">拾光 Shiguang</h1>
-<p align="center"><a href="https://getshiguang.pages.dev/">官網</a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">問題回報</a></p>
-<p align="center">讓每一次轉存記憶卡，都成為可確認、可追溯的流程。</p>
-<p align="center">為<strong>攝影師、影像工作者、獨立創作者與影像團隊</strong>打造的本機素材轉存、二重備份、檢驗與專案封存工具。</p>
+<p align="center"><img src="./shiguang-overview.svg" width="100%" alt="拾光 v0.2.0：檔案、專案與雙目的地複製示意"></p>
+<h1 align="center">每一份素材，都有下一站</h1>
+<p align="center">記憶卡轉存 · 檔案複製 · 專案素材匯入</p>
+<p align="center">為攝影師、錄影師與創作團隊，將素材從來源送到目的地，並留下可核對的結果。</p>
+<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>下載 v0.2.0 · Apple Silicon Mac</strong></a><br>免費內測 · 简体中文 / 繁體中文 / English / 日本語 · 淺色與深色主題</p>
+<p align="center"><a href="https://getshiguang.pages.dev/">官網與互動示意</a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="./RELEASE_NOTES_v0.2.0.md">完整更新說明</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">問題回報</a></p>
+
+## 選擇適合這份素材的工作流程
+
+| 你想做什麼 | 在拾光裡這樣做 |
+| --- | --- |
+| **複製檔案與資料夾** · v0.2.0 新增 | 從 Finder 拖入或選擇檔案，寫入一個或多個目的地；保留原有層級、隱藏檔案與空目錄 |
+| **將既有素材加入專案** · v0.2.0 新增 | 拖到專案卡片或專案詳情，依照片、影片、音訊、工程檔案等類別對應至專案目錄 |
+| **從記憶卡收素材** | 辨識素材，依拍攝日、機位與範本整理；讀取一次，同時寫入工作磁碟與第二備份磁碟 |
+| **整理並封存專案** | 用可重複使用的範本統一目錄，封存時執行完整驗證並保留記錄，不自動刪除本機素材 |
+
+### 從拖入檔案，到確認結果
+
+1. **選來源**：加入檔案、資料夾或記憶卡素材。
+2. **看計畫**：確認檔案數量、總大小、目的地空間、目錄對應與驗證方式。
+3. **複製並檢查**：查看持續顯示的工作進度、完成結果與失敗檔案。
+4. **有缺失就補齊**：重新檢查目的地後，只重試未完成的檔案或副本。
+
+## v0.2.0，讓日常素材流轉更完整
+
+- **寫入前先檢查**：拒絕路徑重疊、目的地互相包含與同卷合計空間不足，並確認目的地身分。
+- **既有檔案不覆寫**：清楚回報同名衝突，不將異常半成品視為成功結果。
+- **每個目的地獨立復原**：一個目的地離線，另一個仍可繼續；重連後只補齊缺失副本。
+- **App 重啟後繼續復原**：工作收據保留已完成結果，涵蓋強制結束、磁碟寫滿與記錄提交中斷等情況。
+- **APFS 目的地保護**：磁碟卸載或被替換時停止寫入，避免誤寫掛載點背後的本機目錄。
+- **原有轉存能力繼續保留**：雙備份、三種驗證、MHL 與可讀報告、防重複轉存、專案範本與封存。
+
+[v0.2.0](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.0) · [查看全部版本](https://github.com/Sorasukiawa/shiguang/releases) · [閱讀 v0.2.0 完整發布說明](./RELEASE_NOTES_v0.2.0.md)
+
+## 下載與使用前須知
+
+僅提供 **Apple Silicon macOS 免費內測版**，Intel Mac 與 Windows 版尚未提供公開下載。可在 ** → 關於這台 Mac** 查看晶片。公開 v0.1.19 可在設定檢查更新；轉存、檔案複製或封存執行時不會安裝更新。
 
 > [!IMPORTANT]
-> 拾光目前是**免費內測版**。處理重要素材時，請保留原始記憶卡，並在確認至少還有一份可靠備份後，才格式化卡片。目前不建議將內測版當作重要素材的唯一保障。
+> 目前安裝包採用 ad-hoc 簽署，尚無 Apple Developer ID 簽署或 Apple 公證。處理重要素材時，請保留原卡與另一份可靠備份，確認副本後再格式化；勿將內測版作為唯一保障。
 
-## 下載
-
-### v0.1.19 · Apple Silicon Mac
-
-目前公開內測版只適用於搭載 Apple M 系列晶片的 Mac（Apple Silicon Mac）。Intel Mac 與 Windows 版尚未提供公開下載。
-
-- [下載拾光 v0.1.19 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.19)
-- [查看所有版本](https://github.com/Sorasukiawa/shiguang/releases)
-
-如果不確定 Mac 的晶片類型，請開啟左上角 ** → 關於這台 Mac**，查看「晶片」欄位。
-
-## v0.1.19 更新內容
-
-拾光 v0.1.19 繼續免費內測，改善經典版的編輯、載入與動效體驗。
-
-- 改善預設編輯的輸入焦點與草稿復原；切換頁面後可繼續編輯，衝突草稿可另存新預設。
-- 設定與轉存初始化失敗時提供清楚回饋及重試入口，補齊四語言錯誤說明。
-- 保留專案頁上抬與統計卡片依序出現效果，完善授權說明及新建專案外觀選項的展開收起動畫。
-- 調整新建專案路徑與外觀選項順序，移除授權卡片收起後多餘的底部空白。
-- 設定新增官網、使用指南及 NAS／百度網盤目錄教學入口。
-
-僅提供 Apple Silicon macOS 版本。公開 v0.1.18 可從設定檢查更新；未設定更新通道的舊版或本機開發包，請結束工作、退出 App 後使用 DMG 替換。升級前請備份重要專案與素材。
-
-仍採 ad-hoc 簽署，尚無 Apple Developer ID 簽署或 Apple 公證。既有 NAS SMB 斷線與百度自動同步隔離限制仍在，請保留原卡與另一份可靠備份。
-
-## 拾光可以做什麼
-
-| 功能 | 說明 |
-| --- | --- |
-| 記憶卡辨識 | 辨識常見照片、影片與音訊素材，依拍攝日期、機位與專案預設整理檔案 |
-| 安全轉存 | 依目標磁碟能力選擇安全寫入方式；絕不覆寫同名檔案，異常殘留會保留並明確報錯 |
-| 二重備份 | 相機卡只讀取一次，同時寫入工作磁碟與第二顆備份磁碟 |
-| 複製檢驗 | 快速檢驗會檢查檔案可讀性與大小；完全檢驗會重新讀取目標檔案，並以 xxHash64 與來源素材比對 |
-| 報告與防止重複轉存 | 產生 MHL 與人類可讀報告，記錄已成功轉存的卡片，補轉存時只處理新增或缺少的檔案 |
-| 專案與預設 | 用可重複使用的資料夾範本建立專案，統一原始素材、選片、成品、音訊與工程檔案結構 |
-| 專案封存 | 封存時執行完全檢驗，保留專案記錄與監管鏈，不會自動刪除本機素材 |
+本版已驗證的情境包含合成檔案、隔離資料庫、Finder 原生拖放與 APFS 映像強制離線；不代表所有實體 USB 裝置、NAS 斷線或第三方同步服務均已驗證。
 
 ## 如何理解檢驗
 
@@ -56,7 +53,7 @@ xxHash64 在這裡用來檢測複製內容是否一致，不是身分驗證或�
 
 ## macOS 首次開啟
 
-v0.1.19 尚未使用 Apple Developer ID 簽署，也尚未通過 Apple 公證。macOS 可能因此擋下首次啟動：
+v0.2.0 尚未使用 Apple Developer ID 簽署，也尚未通過 Apple 公證。macOS 可能因此擋下首次啟動：
 
 1. 只從 [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) 的 Releases 下載 DMG。
 2. 開啟 DMG，將「拾光」拖曳到「Applications / 應用程式」資料夾。

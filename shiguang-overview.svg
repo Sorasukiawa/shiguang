@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Shiguang v0.2.0</title>
+  <desc id="desc">Files and project folders connected to two storage drives. Product workflow illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#24221e"/><stop offset="1" stop-color="#121110"/></linearGradient>
+    <linearGradient id="gold" x1="76" y1="106" x2="150" y2="180" gradientUnits="userSpaceOnUse"><stop stop-color="#f8cc75"/><stop offset="1" stop-color="#ef8859"/></linearGradient>
+  </defs>
+  <rect width="1200" height="420" rx="24" fill="url(#bg)"/>
+  <rect x="76" y="80" width="80" height="80" rx="22" fill="url(#gold)"/>
+  <g transform="translate(91 95) scale(.78)" fill="#fffaf0">
+    <path d="M41.3 7.3C32.6 4.5 22.7 5.2 15.9 9.1C8.7 13.2 5.1 19.6 4.8 29.5C4.4 39.4 6.8 49.3 13.3 54C19.4 58.5 31 58.7 40.8 56.9C50.7 55.1 56.1 50.5 58 42.5C59.8 35 58.5 26.3 55.4 19.5C54.6 17.7 52.6 16.8 50.8 17.5C48.9 18.3 48.2 20.5 49 22.3C51.5 28 52.5 34.9 51 40.8C49.7 46.2 45.8 49 38.8 50.2C30.6 51.6 21.5 51.6 17.2 48.5C12.6 45.1 11.2 37.6 11.5 29.8C11.8 22 14.1 17.3 19.7 14.2C24.8 11.5 32.8 11.1 39.3 13.1C41.3 13.7 43.2 12.4 43.7 10.9C44.2 9.3 43.3 7.9 41.3 7.3Z"/>
+    <path d="M34 39.6L38 36C39.1 35 40.7 35.1 41.6 36.2C42.5 37.3 42.4 38.9 41.3 39.8L37.3 43.4C36.2 44.4 34.6 44.3 33.7 43.2C32.8 42.1 32.9 40.5 34 39.6Z"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif">
+    <text x="76" y="234" fill="#f7f5ee" font-size="54" font-weight="500" letter-spacing="-2">Shiguang</text>
+    <text x="78" y="278" fill="#bbb4a8" font-size="20">Copy. Organize. Verify.</text>
+    <text x="78" y="342" fill="#ecb66a" font-size="16">v0.2.0</text>
+  </g>
+  <g stroke="#e9b66e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M710 207H780Q800 207 800 177V146Q800 128 819 128H869" opacity=".6"/>
+    <path d="M780 207Q800 207 800 237V275Q800 293 819 293H869" opacity=".6"/>
+    <path d="m860 122 7 6-7 6m0 153 7 6-7 6"/>
+  </g>
+  <g transform="rotate(-7 644 200)">
+    <rect x="560" y="100" width="154" height="210" rx="14" fill="#2c2924" stroke="#514634"/>
+    <rect x="581" y="127" width="58" height="7" rx="3" fill="#6b5c44"/>
+    <path d="M588 178h33l10 12h52v54a8 8 0 0 1-8 8h-79a8 8 0 0 1-8-8z" fill="#dca353" opacity=".8"/>
+    <path d="M588 193h95v51a8 8 0 0 1-8 8h-79a8 8 0 0 1-8-8z" fill="#efbd77"/>
+    <rect x="583" y="275" width="66" height="5" rx="2.5" fill="#716756"/>
+    <rect x="583" y="287" width="42" height="5" rx="2.5" fill="#514a3e"/>
+  </g>
+  <g fill="#282622" stroke="#514634">
+    <rect x="877" y="75" width="238" height="108" rx="16"/>
+    <rect x="877" y="240" width="238" height="108" rx="16"/>
+  </g>
+  <g stroke="#b4aa97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m902 130 8-25h35l8 25v18h-51zm0 0h51m-9 9h1m-10 0h1"/>
+    <path d="m902 295 8-25h35l8 25v18h-51zm0 0h51m-9 9h1m-10 0h1"/>
+  </g>
+  <g fill="#726957"><rect x="971" y="113" width="95" height="6" rx="3"/><rect x="971" y="278" width="95" height="6" rx="3"/></g>
+  <g stroke="#8abb98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m975 141 5 5 10-11m-15 171 5 5 10-11"/></g>
+  <path d="M520 62v296" stroke="#ffffff" stroke-opacity=".07"/>
+</svg>

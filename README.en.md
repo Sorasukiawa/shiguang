@@ -1,47 +1,47 @@
 [简体中文](./README.md) | [繁體中文](./README.zh-TW.md) | [English](./README.en.md) | [日本語](./README.ja.md)
 
-<p align="center"><img src="./shiguang-mark.svg" width="88" height="88" alt="Shiguang icon"></p>
-<h1 align="center">拾光 Shiguang</h1>
-<p align="center"><a href="https://getshiguang.pages.dev/">Website</a> · <a href="https://getshiguang.pages.dev/guides/">User guides</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">Report an issue</a></p>
-<p align="center">Make every media offload verifiable and traceable.</p>
-<p align="center">A local-first tool for <strong>photographers, filmmakers, independent creators, and production teams</strong>, covering media offload, dual-destination backup, verification, and project archive workflows.</p>
+<p align="center"><img src="./shiguang-overview.svg" width="100%" alt="Shiguang v0.2.0: files, projects and two-destination copying illustration"></p>
+<h1 align="center">Every file has a next stop.</h1>
+<p align="center">Card offload · File copy · Project media import</p>
+<p align="center">Move media from its source to its destination, with results you can check.<br>For photographers, filmmakers and creative teams.</p>
+<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>Download v0.2.0 · Apple Silicon Mac</strong></a><br>Free beta · 简体中文 / 繁體中文 / English / 日本語 · Light and dark themes</p>
+<p align="center"><a href="https://getshiguang.pages.dev/">Website & interactive demo</a> · <a href="https://getshiguang.pages.dev/guides/">User guides</a> · <a href="./RELEASE_NOTES_v0.2.0.md">Release notes</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">Report an issue</a></p>
+
+## Choose a workflow for your media
+
+| What you want to do | How Shiguang helps |
+| --- | --- |
+| **Copy files and folders** · New in v0.2.0 | Select or drop files from Finder and copy to one or more destinations, preserving hierarchy, hidden files and empty directories |
+| **Bring existing media into a project** · New in v0.2.0 | Drop onto a project card or project details; map photos, video, audio and project files to their folders |
+| **Offload a camera card** | Identify media and organize by shoot date, camera and preset; read once while writing to a working drive and a backup drive |
+| **Organize and archive** | Reuse folder templates, archive with full verification and keep project records without automatically deleting local media |
+
+### From dropping files to checking results
+
+1. **Choose a source:** Add files, folders or camera-card media.
+2. **Review the plan:** Check file count, size, destination space, folder mapping and verification.
+3. **Copy and check:** Follow persistent task progress, completed results and failed files.
+4. **Fill the gaps:** Recheck destinations and retry only unfinished files or copies.
+
+## A more complete workflow in v0.2.0
+
+- **Check before writing:** Catch overlapping paths, nested destinations and insufficient combined space on a shared volume; confirm destination identity.
+- **Never overwrite existing files:** Report name conflicts and keep partial output distinct from completed copies.
+- **Recover each destination independently:** One drive can finish while another disconnects. Reconnect to fill missing copies.
+- **Recover after restarting the app:** Task receipts preserve completed results across forced exits, full disks and interrupted record commits.
+- **Protect APFS destinations:** Stop writing if a volume detaches or is replaced, avoiding the local directory behind its former mount point.
+- **Keep the original offload tools:** Dual backups, three verification modes, MHL and readable reports, duplicate prevention, project templates and archiving.
+
+[v0.2.0](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.0) · [All releases](https://github.com/Sorasukiawa/shiguang/releases) · [Complete v0.2.0 release notes](./RELEASE_NOTES_v0.2.0.md)
+
+## Before you download
+
+Available as a **free beta for Apple Silicon macOS only**. Intel Mac and Windows builds are not yet available for public download. Check your chip under ** → About This Mac**. Public v0.1.19 users can check for updates in Settings; updates do not install during offload, file copy or archiving.
 
 > [!IMPORTANT]
-> Shiguang is currently a **free beta**. Keep the original memory card and confirm at least one other known-good backup before formatting it. Do not use this beta as the only safeguard for important media.
+> This build is ad-hoc signed, without Apple Developer ID signing or Apple notarization. Keep original cards and another reliable backup until copies are checked. Do not use the beta as the only safeguard for important media.
 
-## Download
-
-### v0.1.19 · Apple Silicon Mac
-
-The current public beta is available only for an Apple Silicon Mac with an Apple M-series chip. Intel Mac and Windows builds are not yet available for public download.
-
-- [Download Shiguang v0.1.19 DMG](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.1.19)
-- [View all releases](https://github.com/Sorasukiawa/shiguang/releases)
-
-If you are unsure which chip your Mac uses, open ** → About This Mac** and check the Chip field.
-
-## What changed in v0.1.18
-
-- Project lists and details show loading, failure, and retry states. Slow disk queries no longer block task-progress initialization, and failed refreshes preserve the existing list.
-- Preset read failures preserve the original file. In-memory presets change only after saving succeeds, and unchanged presets are no longer rewritten on every launch.
-- NAS archives gain persistent task records, re-verification of the original plan, and a new-task recovery entry after failure. Expandable history identifies each attempt's folder.
-- MHL manifests now handle required fields and special characters correctly. Interrupted-job checks, resumed-copy feedback, and dual-destination result descriptions are clearer.
-- Stalled update downloads time out. Invalidated packages can be checked again, and stale notices are removed. Installation and restart remain blocked during offload or archiving.
-- Project details fit smaller windows better, with improved layout transitions and page language declarations for all four languages.
-
-The public v0.1.16 → v0.1.18 upgrade passed download, installation, and automatic restart checks from Settings on this Mac. The public v0.1.17 build has no update channel and cannot upgrade from Settings: finish running jobs, quit Shiguang, and replace it using this Release’s DMG. v0.1.18 includes the update channel. Project records, settings, and custom presets were preserved in this upgrade; the built-in video preset gained its photo-media route. First installation on a clean Mac remains unverified.
-
-## What Shiguang does
-
-| Capability | Description |
-| --- | --- |
-| Card detection | Recognizes common photo, video, and audio media, then organizes files by shoot date, camera position, and reusable project preset |
-| Safe media offload | Selects a safe write protocol for each destination; existing files are never overwritten, and interrupted remnants are preserved and reported |
-| Dual-destination backup | Reads the camera card once while writing to a working drive and a second backup drive |
-| Verification | Quick verification checks readability and size; full verification rereads destination files and compares xxHash64 values with the source media |
-| Reports and duplicate prevention | Produces MHL and human-readable reports, remembers completed cards, and copies only new or missing files during a follow-up offload |
-| Projects and presets | Creates projects from reusable folder templates for originals, selects, deliverables, audio, and production files |
-| Project archive | Runs full verification during archival, keeps the project record and chain of custody, and does not automatically delete local media |
+Validated scenarios include synthetic files, isolated databases, native Finder drag and drop, and forced disconnection of APFS disk images. This does not establish compatibility with every physical USB device, NAS failure mode or third-party sync service.
 
 ## Understanding verification
 
@@ -53,7 +53,7 @@ Here, xxHash64 detects whether copied content is identical; it is not authentica
 
 ## First launch on macOS
 
-The v0.1.19 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
+The v0.2.0 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
 
 1. Download the DMG only from the [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) Releases page.
 2. Open the DMG and drag Shiguang into **Applications**.
