@@ -6,7 +6,7 @@
 <p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>v0.2.0 をダウンロード · Apple Silicon Mac</strong></a><br>無料ベータ · 简体中文 / 繁體中文 / English / 日本語 · ライト／ダークテーマ</p>
 <p align="center"><a href="https://getshiguang.pages.dev/">公式サイト・操作イメージ</a> · <a href="https://getshiguang.pages.dev/guides/">使い方</a> · <a href="./RELEASE_NOTES_v0.2.0.md">更新内容</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">問題を報告</a></p>
 
-<p align="center"><img src="./shiguang-app-preview.png" width="100%" alt="サンプルプロジェクトを使用した拾光の作業画面"><br><sub>アプリ画面プレビュー · サンプルのプロジェクトとデータ</sub></p>
+<p align="center"><img src="./shiguang-overview.svg" width="100%" alt="Shiguang：コピー、整理、検証"></p>
 
 ## 素材に合ったワークフローを選ぶ
 
@@ -16,10 +16,6 @@
 | **既存素材をプロジェクトへ追加** · v0.2.0 新機能 | プロジェクトカードや詳細へドロップし、写真、動画、音声、編集ファイルを対応するフォルダーへ整理 |
 | **カードから素材を取り込む** | 撮影日、カメラ、テンプレート別に整理。一度の読み取りで作業用とバックアップの2台へ書き込み |
 | **整理してアーカイブ** | フォルダーのテンプレートを再利用。完全検証と記録を伴うアーカイブで、ローカル素材は自動削除しない |
-
-### ひとつの素材を、複数の保存先へ
-
-<p align="center"><img src="./shiguang-overview.svg" width="760" alt="処理イメージ：複数の保存先にコピーし、それぞれの結果を確認"></p>
 
 ### ドロップから結果の確認まで
 
