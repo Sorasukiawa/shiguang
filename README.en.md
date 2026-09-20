@@ -1,11 +1,12 @@
 [简体中文](./README.md) | [繁體中文](./README.zh-TW.md) | [English](./README.en.md) | [日本語](./README.ja.md)
 
-<p align="center"><img src="./shiguang-overview.svg" width="100%" alt="Shiguang v0.2.0: files, projects and two-destination copying illustration"></p>
-<h1 align="center">Every file has a next stop.</h1>
+<p align="center"><img src="./shiguang-icon.png" width="112" height="112" alt="Shiguang"></p>
+<h1 align="center">Shiguang</h1>
 <p align="center">Card offload · File copy · Project media import</p>
-<p align="center">Move media from its source to its destination, with results you can check.<br>For photographers, filmmakers and creative teams.</p>
 <p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>Download v0.2.0 · Apple Silicon Mac</strong></a><br>Free beta · 简体中文 / 繁體中文 / English / 日本語 · Light and dark themes</p>
 <p align="center"><a href="https://getshiguang.pages.dev/">Website & interactive demo</a> · <a href="https://getshiguang.pages.dev/guides/">User guides</a> · <a href="./RELEASE_NOTES_v0.2.0.md">Release notes</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">Report an issue</a></p>
+
+<p align="center"><img src="./shiguang-app-preview.png" width="100%" alt="Shiguang project workspace with sample projects"><br><sub>App interface preview · Sample projects and data</sub></p>
 
 ## Choose a workflow for your media
 
@@ -15,6 +16,10 @@
 | **Bring existing media into a project** · New in v0.2.0 | Drop onto a project card or project details; map photos, video, audio and project files to their folders |
 | **Offload a camera card** | Identify media and organize by shoot date, camera and preset; read once while writing to a working drive and a backup drive |
 | **Organize and archive** | Reuse folder templates, archive with full verification and keep project records without automatically deleting local media |
+
+### One source, multiple destinations
+
+<p align="center"><img src="./shiguang-overview.svg" width="760" alt="Workflow illustration: copy media to multiple destinations and check each result"></p>
 
 ### From dropping files to checking results
 

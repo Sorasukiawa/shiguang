@@ -1,11 +1,12 @@
 [简体中文](./README.md) | [繁體中文](./README.zh-TW.md) | [English](./README.en.md) | [日本語](./README.ja.md)
 
-<p align="center"><img src="./shiguang-overview.svg" width="100%" alt="拾光 v0.2.0：ファイル、プロジェクト、2つの保存先へのコピーのイメージ"></p>
-<h1 align="center">すべての素材に、次の行き先を。</h1>
+<p align="center"><img src="./shiguang-icon.png" width="112" height="112" alt="拾光 Shiguang"></p>
+<h1 align="center">拾光 Shiguang</h1>
 <p align="center">カード取り込み · ファイルコピー · プロジェクト取り込み</p>
-<p align="center">素材を入力元から保存先へ、確認できる結果とともに。<br>写真家、映像制作者、クリエイティブチームのために。</p>
 <p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>v0.2.0 をダウンロード · Apple Silicon Mac</strong></a><br>無料ベータ · 简体中文 / 繁體中文 / English / 日本語 · ライト／ダークテーマ</p>
 <p align="center"><a href="https://getshiguang.pages.dev/">公式サイト・操作イメージ</a> · <a href="https://getshiguang.pages.dev/guides/">使い方</a> · <a href="./RELEASE_NOTES_v0.2.0.md">更新内容</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">問題を報告</a></p>
+
+<p align="center"><img src="./shiguang-app-preview.png" width="100%" alt="サンプルプロジェクトを使用した拾光の作業画面"><br><sub>アプリ画面プレビュー · サンプルのプロジェクトとデータ</sub></p>
 
 ## 素材に合ったワークフローを選ぶ
 
@@ -15,6 +16,10 @@
 | **既存素材をプロジェクトへ追加** · v0.2.0 新機能 | プロジェクトカードや詳細へドロップし、写真、動画、音声、編集ファイルを対応するフォルダーへ整理 |
 | **カードから素材を取り込む** | 撮影日、カメラ、テンプレート別に整理。一度の読み取りで作業用とバックアップの2台へ書き込み |
 | **整理してアーカイブ** | フォルダーのテンプレートを再利用。完全検証と記録を伴うアーカイブで、ローカル素材は自動削除しない |
+
+### ひとつの素材を、複数の保存先へ
+
+<p align="center"><img src="./shiguang-overview.svg" width="760" alt="処理イメージ：複数の保存先にコピーし、それぞれの結果を確認"></p>
 
 ### ドロップから結果の確認まで
 

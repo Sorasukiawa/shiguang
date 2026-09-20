@@ -1,11 +1,12 @@
 [简体中文](./README.md) | [繁體中文](./README.zh-TW.md) | [English](./README.en.md) | [日本語](./README.ja.md)
 
-<p align="center"><img src="./shiguang-overview.svg" width="100%" alt="拾光 v0.2.0：文件、项目与双目标拷贝示意"></p>
-<h1 align="center">每一份素材，都有下一站</h1>
+<p align="center"><img src="./shiguang-icon.png" width="112" height="112" alt="拾光 Shiguang"></p>
+<h1 align="center">拾光 Shiguang</h1>
 <p align="center">相机卡拷卡 · 文件拷贝 · 项目素材导入</p>
-<p align="center">为摄影师、摄像师与创作团队，把素材从来源送到目的地，并留下可核对的结果。</p>
 <p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>下载 v0.2.0 · Apple Silicon Mac</strong></a><br>免费内测 · 简体中文 / 繁體中文 / English / 日本語 · 浅色与深色主题</p>
 <p align="center"><a href="https://getshiguang.pages.dev/">官网与交互演示</a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="./RELEASE_NOTES_v0.2.0.md">完整更新说明</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">问题反馈</a></p>
+
+<p align="center"><img src="./shiguang-app-preview.png" width="100%" alt="拾光项目工作台，使用示例项目展示"><br><sub>App 界面预览 · 示例项目与数据</sub></p>
 
 ## 选择适合这份素材的工作流
 
@@ -15,6 +16,10 @@
 | **把已有素材加入项目** · v0.2.0 新增 | 拖到项目卡片或项目详情，按照片、视频、音频、工程文件等类别映射到项目目录 |
 | **从相机卡收素材** | 识别素材，按拍摄日、机位与项目预设整理；相机卡读取一次，同时写入工作盘与第二备份盘 |
 | **整理并归档项目** | 用可复用模板统一目录，归档时执行完整校验、保留项目记录，不自动删除本地素材 |
+
+### 一份来源，多个落点
+
+<p align="center"><img src="./shiguang-overview.svg" width="760" alt="流程示意：素材写入多个目标，每份副本分别确认结果"></p>
 
 ### 从拖入文件，到确认结果
 
