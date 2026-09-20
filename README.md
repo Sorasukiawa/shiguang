@@ -6,7 +6,7 @@
 <p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>下载 v0.2.0 · Apple Silicon Mac</strong></a><br>免费内测 · 简体中文 / 繁體中文 / English / 日本語 · 浅色与深色主题</p>
 <p align="center"><a href="https://getshiguang.pages.dev/">官网与交互演示</a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="./RELEASE_NOTES_v0.2.0.md">完整更新说明</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">问题反馈</a></p>
 
-<p align="center"><img src="./shiguang-overview.svg" width="100%" alt="拾光 Shiguang：拷贝、整理与校验"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Sorasukiawa/shiguang/328fb3cb25479f3d4c1dd1c168fa28d315e95f55/shiguang-overview.svg" width="100%" alt="拾光 Shiguang：拷贝、整理与校验"></p>
 
 ## 选择适合这份素材的工作流
 
