@@ -1,3 +1,41 @@
+# 拾光 Shiguang v0.2.0 · 文件拷贝与项目素材导入
+
+**历史版本 / Historical release** · 新增文件与文件夹多目标拷贝、Finder 拖入及项目素材导入；保留目录层级，提供空间预检、校验、逐目标结果与中断恢复。
+
+**[下载本版本 DMG · Apple Silicon Mac](https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg)** · [安装指南](https://getshiguang.pages.dev/guides/) · [全部版本](https://github.com/Sorasukiawa/shiguang/blob/main/VERSIONS.md)
+
+**历史版本提示：**本页下载固定为此版本。若已安装的旧版没有更新通道，请结束任务、退出 App 后用目标版本 DMG 手动升级。
+
+<details><summary>繁體中文 · 檔案複製與專案素材匯入</summary>
+
+新增檔案與資料夾的多目的地複製、Finder 拖入與專案素材匯入；保留資料夾層級，提供空間預檢、驗證、各目的地結果與中斷復原。
+
+僅提供 Apple Silicon macOS 免費測試版，採用 ad-hoc 簽署，尚無 Apple Developer ID 簽署或公證。DMG 供手動安裝；重要素材請保留原卡及另一份可靠備份。
+
+</details>
+
+<details><summary>English · File copy & project import</summary>
+
+Adds multi-destination file and folder copying, Finder drag and drop, and project media import. Preserves folder structure and provides capacity preflight, verification, per-destination results, and interruption recovery.
+
+Apple Silicon macOS free beta only. This build is ad-hoc signed, without Apple Developer ID signing or notarization. Use the DMG for manual installation, and keep the original card plus another reliable backup for important media.
+
+</details>
+
+<details><summary>日本語 · ファイルコピーと素材追加</summary>
+
+ファイル／フォルダーの複数保存先へのコピー、Finder からのドラッグ、プロジェクトへの素材追加に対応。階層保持、容量の事前確認、検証、保存先別の結果、中断後の復旧を備えます.
+
+Apple Silicon macOS 向けの無料ベータ版のみです。ad-hoc 署名で、Apple Developer ID 署名と公証はありません。手動インストールには DMG を使い、大切な素材は元カードと別の信頼できるバックアップを残してください。
+
+</details>
+
+![v0.2.0 文件拷贝界面演示，使用示例路径与文件](https://raw.githubusercontent.com/Sorasukiawa/shiguang/64ca6e5971d1245c2da1a4a3040bed1c13d0fee5/file-copy-v0.2.0-demo.png)
+
+*界面流程演示；示例路径与文件。*
+
+<details><summary>详细发布记录（四语言）</summary>
+
 [简体中文](#简体中文) | [繁體中文](#繁體中文) | [English](#english) | [日本語](#日本語)
 
 ## 简体中文
@@ -135,3 +173,11 @@ This build remains ad-hoc signed and is not signed with an Apple Developer ID or
 Apple Silicon macOS 専用です。公開版 v0.1.19 は設定から更新を確認できます。取り込み、ファイルコピー、アーカイブの実行中には更新をインストールしません。重要な処理を終え、元のカードと別の信頼できるバックアップを保管してから更新してください。
 
 このビルドは引き続き ad-hoc 署名で、Apple Developer ID 署名および Apple 公証はありません。初回起動時は **システム設定 → プライバシーとセキュリティ → そのまま開く** が必要な場合があります。本リリースでは、合成ファイル、分離データベース、Finder のネイティブドラッグ＆ドロップ、APFS ディスクイメージの強制切断を検証しています。すべての物理 USB 機器、NAS 障害、サードパーティ同期サービスへの対応を保証するものではありません。
+
+</details>
+
+---
+
+**安装与文件：**本版仅提供 Apple Silicon macOS。DMG 用于手动安装；同页的 `Shiguang_aarch64.app.tar.gz`、`.sig` 和 `latest.json` 供应用内更新使用。本版为 ad-hoc 签名，未获 Apple Developer ID 签名或 Apple 公证。GitHub 自动生成的 Source code 归档只是公开资料，不含拾光 App 源码，也不是安装包。
+
+重要素材请保留原始卡和另一份可靠备份，确认副本后再格式化。问题请提交至 [Issues](https://github.com/Sorasukiawa/shiguang/issues)，不要上传原始素材、客户资料或私密路径。

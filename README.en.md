@@ -1,91 +1,70 @@
-[简体中文](./README.md) | [繁體中文](./README.zh-TW.md) | [English](./README.en.md) | [日本語](./README.ja.md)
+[简体中文](./README.md) · [繁體中文](./README.zh-TW.md) · [English](./README.en.md) · [日本語](./README.ja.md)
 
-<p align="center"><img src="./shiguang-icon.png" width="112" height="112" alt="Shiguang"></p>
-<h1 align="center">Shiguang</h1>
-<p align="center">Card offload · File copy · Project media import</p>
-<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.1/Shiguang_0.2.1_aarch64.dmg"><strong>Download v0.2.1 · Apple Silicon Mac</strong></a><br>Free beta · 简体中文 / 繁體中文 / English / 日本語 · Light and dark themes</p>
-<p align="center"><a href="https://getshiguang.pages.dev/">Website & interactive demo</a> · <a href="https://getshiguang.pages.dev/guides/">User guides</a> · <a href="./RELEASE_NOTES_v0.2.1.md">Release notes</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">Report an issue</a></p>
+<p align="center"><img src="./shiguang-icon.png" width="96" height="96" alt="Shiguang app icon"></p>
+<h1 align="center">Shiguang 拾光</h1>
+<p align="center"><strong>Bring your footage home with confidence.</strong></p>
+<p align="center">A Mac media workspace for photographers and video teams. Ingest camera cards, files, and folders; write to multiple destinations; verify each copy; and keep searchable project and task reports.</p>
+<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.1/Shiguang_0.2.1_aarch64.dmg"><strong>Download v0.2.1 · Apple Silicon Mac</strong></a> · <a href="https://getshiguang.pages.dev/guides/">User guides</a> · <a href="https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.1">What's new</a></p>
+<p align="center">Free beta · 简体中文 / 繁體中文 / English / 日本語 · Light and dark themes</p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/Sorasukiawa/shiguang/328fb3cb25479f3d4c1dd1c168fa28d315e95f55/shiguang-overview.svg" width="100%" alt="Shiguang: Copy. Organize. Verify."></p>
+![Shiguang project workspace with fictional photography projects and backup status; dark theme, Chinese interface](./projects-v0.2.1-dark.png)
 
-## Choose a workflow for your media
+*Illustrative projects and data, rendered from the Shiguang UI in an isolated browser. This image does not establish native file-operation testing.*
 
-| What you want to do | How Shiguang helps |
-| --- | --- |
-| **Copy files and folders** · New in v0.2.0 | Select or drop files from Finder and copy to one or more destinations, preserving hierarchy, hidden files and empty directories |
-| **Bring existing media into a project** · New in v0.2.0 | Drop onto a project card or project details; map photos, video, audio and project files to their folders |
-| **Offload a camera card** | Identify media and organize by shoot date, camera and preset; read once while writing to a working drive and a backup drive |
-| **Organize and archive** | Reuse folder templates, archive with full verification and keep project records without automatically deleting local media |
+## A clear path for every shoot
 
-### From dropping files to checking results
+| Start with | What Shiguang does | What you can check |
+| --- | --- | --- |
+| **Camera card ingest** | Finds photo, video, and audio media; organizes by project, shoot date, and camera; reads the source once while writing to a working disk and a second backup | Copy and verification results for each destination, card history, and retry status |
+| **File and folder copy** | Takes files from Finder or a picker, preserves folder structure, and writes to one or more destinations | Source list, capacity preflight, transfer results, and retry for incomplete copies |
+| **Project media import** | Adds existing media to a chosen project and maps photos, video, audio, and project files into its folders | Import location, project record, and task result |
+| **Project archive** | Archives to a local or network destination while retaining the project record; does not automatically delete local media | Archive task, available verification result, and report |
 
-1. **Choose a source:** Add files, folders or camera-card media.
-2. **Review the plan:** Check file count, size, destination space, folder mapping and verification.
-3. **Copy and check:** Follow persistent task progress, completed results and failed files.
-4. **Fill the gaps:** Recheck destinations and retry only unfinished files or copies.
+Shiguang **never overwrites existing files**. Multi-destination results are tracked separately. After an interruption or disconnect, it checks destination identity and capacity again before retrying incomplete copies.
 
-## More rigorous copy verification in v0.2.1
+### File copy
 
-- **Quick verification rereads every destination byte:** It recomputes XXH64 for each copy and compares it with the source hash calculated during copying.
-- **Full verification also rereads the source card:** This independent pass can expose unstable reads from the card, reader, or connection.
-- **File cache bypass is requested on macOS:** Copying and verification request uncached I/O; the result reports when a device cannot honor it.
-- **Validated with a physical camera card:** 86 files and about 11.93 GB from a Canon ExFAT SD card passed copying, quick verification, and full verification.
-- **Task reports and slow-drive response:** Filter and export offload, file-copy, and archive results as four-language HTML or PDF. Card preflight leaves the database connection shared by other pages available while waiting on storage.
-- **Existing safety guarantees remain:** No-overwrite writes, independent destination recovery, APFS destination protection, MHL, reports, and project archiving are unchanged.
+![Shiguang file-copy workflow showing sources, destinations, and verification options; Chinese interface](./file-copy-v0.2.0-demo.png)
 
-[v0.2.1](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.1) · [All releases](https://github.com/Sorasukiawa/shiguang/releases) · [Complete v0.2.1 release notes](./RELEASE_NOTES_v0.2.1.md)
+*UI workflow demonstration for a feature introduced in v0.2.0. Paths and files are examples.*
 
-## Before you download
+### Task reports
 
-Available as a **free beta for Apple Silicon macOS only**. Intel Mac and Windows builds are not yet available for public download. Check your chip under ** → About This Mac**. Public v0.2.0 users can check for updates in Settings; updates do not install during offload, file copy or archiving.
+Find results by project, date, type, and status; export an offline HTML or multipage PDF report. Missing fields in older records are marked as unknown rather than treated as success.
 
-> [!IMPORTANT]
-> This build is ad-hoc signed, without Apple Developer ID signing or Apple notarization. Keep original cards and another reliable backup until copies are checked. Do not use the beta as the only safeguard for important media.
+<img src="./report-v0.2.1-synthetic.png" width="480" alt="Shiguang v0.2.1 PDF task report with synthetic data showing interrupted and failed tasks; Chinese content">
 
-Validated scenarios include synthetic files, isolated databases, native Finder drag and drop, and forced disconnection of APFS disk images. This does not establish compatibility with every physical USB device, NAS failure mode or third-party sync service.
+*v0.2.1 report example; all content is synthetic.*
 
-## Understanding verification
+## Get started
 
-- **No verification:** Relies only on whether the write operation reports an error. It is the fastest option and is not suitable for important media.
-- **Quick verification:** Rereads every byte from each destination, recalculates xxHash64, and compares it with the source hash captured during copying.
-- **Full verification:** Performs quick verification and independently rereads every source file to recalculate xxHash64, which can also expose unstable reads from the card, reader, or connection.
+1. Download the **Apple Silicon Mac** DMG above. There is no public Intel Mac or Windows installer. Check your chip in **Apple menu → About This Mac**.
+2. Open the DMG and drag Shiguang into Applications. If macOS blocks the first launch, verify the app in **System Settings → Privacy & Security** and choose **Open Anyway**. You do not need to disable Gatekeeper.
+3. Add a source, project, and destinations. Review capacity and verification before starting. Keep the original card and another reliable backup for important media; format the card only after checking the copies.
 
-Here, xxHash64 detects whether copied content is identical; it is not authentication or a cryptographic signature. Even after verification passes, open and spot-check critical media and confirm that at least two copies are usable before formatting a camera card.
+This is a **free beta** with an ad-hoc signature, without Apple Developer ID signing or notarization. Download only from [this repository's Releases](https://github.com/Sorasukiawa/shiguang/releases). Active ingest, file-copy, or archive tasks block installation of an update.
 
-## First launch on macOS
+## Current release · v0.2.1
 
-The v0.2.1 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
+- Fast verification fully rereads each destination file and compares XXH64. Full verification also independently rereads the source. Results disclose when the device cannot bypass the system cache.
+- Ingest, file-copy, project-import, and archive tasks now have searchable, exportable reports. Interrupted records are no longer shown as successful.
+- Storage preflight on a slow device no longer monopolizes the database connection used by other pages.
 
-1. Download the DMG only from the [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) Releases page.
-2. Open the DMG and drag Shiguang into **Applications**.
-3. Try opening Shiguang normally once. If macOS blocks it, close the warning.
-4. Open **System Settings → Privacy & Security**, confirm that the blocked app is Shiguang, and choose **Open Anyway**.
+[Full release notes](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.1) · [All versions](./VERSIONS.md)
 
-You do not need to disable Gatekeeper. Never bypass system protection for a package from an unknown source.
+<details>
+<summary>Verification, storage, and network folders</summary>
 
-## Drive compatibility
+- **No verification** only relies on write errors and is unsuitable for important media. **Fast verification** rereads each destination file and compares its XXH64 with the hash computed from the source during copying. **Full verification** independently rereads every source file too. XXH64 detects content differences; it is not a cryptographic signature. Spot-check critical media even after verification passes.
+- APFS is recommended for working, second-backup, and archive destinations. ExFAT can be a destination only if it passes Shiguang's safety capability check; otherwise writing is refused before it starts. An ExFAT camera card can be a read-only source. Shiguang does not require formatting existing media.
+- Scanning, copying, verification, and project records are local by default; Shiguang does not upload photos or video to its own server. If you choose a NAS or third-party sync folder, the operating system or service handles subsequent network transfer or sync. Check disconnect and sync behavior in your own environment.
 
-- **APFS is recommended for working drives, second backup drives, and archive destinations.**
-- **ExFAT can also be a destination, but it must first pass Shiguang's safety capability probe.** Shiguang verifies volume identity, exclusive creation, and durable volume writes. If safety cannot be established, it refuses the copy before writing media instead of falling back to an overwrite-prone path.
-- **An ExFAT camera card can be used directly as a read-only source** and is not subject to the destination-drive probe.
+</details>
 
-APFS and ExFAT use different safe-write strategies, but neither path overwrites an existing file. Shiguang does not ask you to format a source card or an existing working drive; do not change the format of the only medium holding your media merely to test the beta.
+## Help and feedback
 
-## Privacy and network access
+[Website](https://getshiguang.pages.dev/) · [Guides](https://getshiguang.pages.dev/guides/) · [Report an issue](https://github.com/Sorasukiawa/shiguang/issues)
 
-- Media scanning, copying, verification, and project records are processed locally by default.
-- Shiguang does not upload your photos or videos to a Shiguang server.
-- If you choose a NAS or a third-party sync folder as a destination, subsequent network transfer or cloud synchronization is handled by that system or provider.
-- When automatic update checks are enabled, the app contacts the official update source. It only notifies you of an update and does not install one during an offload or archive operation.
+Include the app version, macOS version and chip, source and destination formats, reproduction steps, and complete error text. Redact project names and paths in screenshots. **Do not upload original media or client information.**
 
-## Report a beta issue
-
-Open an [Issue](https://github.com/Sorasukiawa/shiguang/issues) with your Shiguang version, macOS version, Mac chip, source and destination drive formats, reproducible steps, and the complete error text. Screenshots are helpful, but redact client names, project names, and local paths first.
-
-Do not upload original media, client information, private paths, or other sensitive data to an Issue.
-
-## About this repository
-
-This is Shiguang's public repository for **official installers, user documentation, release notes, and user feedback**.
-
-**This repository does not contain the Shiguang source code. It provides no open-source license and grants no right to modify or redistribute the source code.**
+This repository hosts installers, documentation, release history, and feedback. **It does not contain the Shiguang app source code or grant an open-source or redistribution license.** GitHub's automatic Source code archives contain only this repository's public materials; they are not app installers.

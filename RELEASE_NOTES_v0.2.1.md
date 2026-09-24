@@ -1,3 +1,49 @@
+# 拾光 Shiguang v0.2.1 · 校验升级与任务报告
+
+快速校验完整回读每份目标文件；完整校验还会独立重读来源。新增可筛选、导出的 HTML／PDF 任务报告，并改进慢盘预检响应。
+
+**[下载本版本 DMG · Apple Silicon Mac](https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.1/Shiguang_0.2.1_aarch64.dmg)** · [安装指南](https://getshiguang.pages.dev/guides/) · [全部版本](https://github.com/Sorasukiawa/shiguang/blob/main/VERSIONS.md)
+
+**升级提示：**公开 v0.2.0 可从设置检查更新；正在运行的拷卡、文件拷贝或归档任务会阻止安装。升级前请结束重要任务并保留备份。
+
+**已知边界：**NAS／SMB 断连后的恢复可能较慢；本地写入第三方同步目录，不等于云端同步已完成或已验证。
+
+<details><summary>繁體中文 · 驗證升級與工作報告</summary>
+
+快速驗證完整重讀每份目的地檔案；完整驗證還會獨立重讀來源。新增可篩選、匯出的 HTML／PDF 工作報告，並改善慢速磁碟預檢時的回應。
+
+僅提供 Apple Silicon macOS 免費測試版，採用 ad-hoc 簽署，尚無 Apple Developer ID 簽署或公證。DMG 供手動安裝；重要素材請保留原卡及另一份可靠備份。
+
+NAS／SMB 斷線後的復原可能較慢；寫入第三方同步資料夾，不代表雲端同步已完成或已驗證。
+
+</details>
+
+<details><summary>English · Verification & task reports</summary>
+
+Fast verification now rereads every destination file; full verification also independently rereads the source. Searchable HTML/PDF task reports arrive, and slow-disk preflight no longer blocks other pages.
+
+Apple Silicon macOS free beta only. This build is ad-hoc signed, without Apple Developer ID signing or notarization. Use the DMG for manual installation, and keep the original card plus another reliable backup for important media.
+
+Recovery after a NAS/SMB disconnect may be slow. Writing to a third-party sync folder does not establish that cloud synchronization completed or was verified.
+
+</details>
+
+<details><summary>日本語 · 検証の強化と作業レポート</summary>
+
+簡易検証では保存先ファイルをすべて読み直し、完全検証では元ファイルも独立して読み直します。検索・書き出し可能な HTML／PDF 作業レポートを追加し、低速ディスクの事前確認中の応答も改善しました。
+
+Apple Silicon macOS 向けの無料ベータ版のみです。ad-hoc 署名で、Apple Developer ID 署名と公証はありません。手動インストールには DMG を使い、大切な素材は元カードと別の信頼できるバックアップを残してください。
+
+NAS／SMB の切断後は復旧に時間がかかる場合があります。外部同期フォルダーへの書き込みは、クラウド同期の完了や検証を意味しません。
+
+</details>
+
+<img src="https://raw.githubusercontent.com/Sorasukiawa/shiguang/64ca6e5971d1245c2da1a4a3040bed1c13d0fee5/report-v0.2.1-synthetic.png" width="480" alt="v0.2.1 PDF 任务报告示例，全部为合成数据">
+
+*报告示例；全部内容为合成数据。*
+
+<details><summary>详细发布记录（四语言）</summary>
+
 [简体中文](#简体中文) | [繁體中文](#繁體中文) | [English](#english) | [日本語](#日本語)
 
 ## 简体中文
@@ -11,7 +57,6 @@
 
 仅支持 Apple Silicon macOS。公开 v0.2.0 用户可在设置中检查更新；执行中的拷卡、文件拷贝或归档任务会阻止安装。更新前请结束重要任务，并保留原始素材及另一份可靠备份。
 
-本版仍为 ad-hoc 签名，未取得 Apple Developer ID 签名或公证。隔离验收覆盖原生 PDF、实体 U 盘和独立 SMB 故障；其中一次 272 MiB SMB 恢复耗时 419 秒。实体介质上的拷卡与本地归档失败重试已通过界面验证，并确认新旧作业关联。
 
 ## 繁體中文
 
@@ -24,7 +69,6 @@
 
 僅支援 Apple Silicon macOS。公開 v0.2.0 使用者可在設定中檢查更新；進行中的記憶卡轉存、檔案複製或封存工作會阻止安裝。更新前請結束重要工作，保留原始素材與另一份可靠備份。
 
-本版仍採用 ad-hoc 簽署，未取得 Apple Developer ID 簽署或公證。隔離驗收涵蓋原生 PDF、實體 USB 隨身碟和獨立 SMB 故障；其中一次 272 MiB SMB 復原耗時 419 秒。實體媒體上的記憶卡轉存與本機封存失敗重試已透過介面驗證，並確認新舊工作關聯。
 
 ## English
 
@@ -37,7 +81,6 @@ Shiguang v0.2.1 continues the free beta. This release strengthens copy verificat
 
 Apple Silicon macOS only. Users of public v0.2.0 can check for updates in Settings. Running offload, file-copy, or archive jobs prevent installation. Finish important jobs and keep the original media plus another reliable backup before upgrading.
 
-This build remains ad-hoc signed, without Apple Developer ID signing or notarization. Isolated validation covered native PDFs, a physical USB drive, and an independent SMB session; one 272 MiB SMB recovery took 419 seconds. Failed card offloads and local archives were retried through the UI on physical media, with the new jobs linked to the earlier attempts.
 
 ## 日本語
 
@@ -50,4 +93,11 @@ This build remains ad-hoc signed, without Apple Developer ID signing or notariza
 
 Apple Silicon 搭載 macOS 専用です。公開版 v0.2.0 の利用者は設定から更新を確認できます。取り込み、ファイルコピー、アーカイブの実行中は更新をインストールできません。更新前に重要な処理を終え、元の素材ともう一つの信頼できるバックアップを保管してください。
 
-このビルドは引き続き ad-hoc 署名で、Apple Developer ID 署名および公証はありません。分離した環境でネイティブ PDF、実機 USB メモリー、独立した SMB 接続の障害を検証しました。そのうち 272 MiB の SMB 復旧には 419 秒かかりました。実機メディアでカード取り込みとローカルアーカイブの失敗後の再試行を UI から検証し、新旧ジョブの関連付けも確認しました。
+
+</details>
+
+---
+
+**安装与文件：**本版仅提供 Apple Silicon macOS。DMG 用于手动安装；同页的 `Shiguang_aarch64.app.tar.gz`、`.sig` 和 `latest.json` 供应用内更新使用。本版为 ad-hoc 签名，未获 Apple Developer ID 签名或 Apple 公证。GitHub 自动生成的 Source code 归档只是公开资料，不含拾光 App 源码，也不是安装包。
+
+重要素材请保留原始卡和另一份可靠备份，确认副本后再格式化。问题请提交至 [Issues](https://github.com/Sorasukiawa/shiguang/issues)，不要上传原始素材、客户资料或私密路径。
