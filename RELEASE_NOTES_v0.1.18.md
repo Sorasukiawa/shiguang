@@ -4,7 +4,7 @@
 
 **[下载本版本 DMG · Apple Silicon Mac](https://github.com/Sorasukiawa/shiguang/releases/download/v0.1.18/Shiguang_0.1.18_aarch64.dmg)** · [安装指南](https://getshiguang.pages.dev/guides/) · [全部版本](https://github.com/Sorasukiawa/shiguang/blob/main/VERSIONS.md)
 
-**升级提示：**已安装公开 v0.1.17 的用户不能从设置页直接升级，须结束任务、退出 App 后使用本版 DMG；公开 v0.1.16 → v0.1.18 的应用内升级已验收。
+<strong>升级提示：</strong>已安装公开 v0.1.17 的用户不能从设置页直接升级，须结束任务、退出 App 后使用本版 DMG；公开 v0.1.16 → v0.1.18 的应用内升级已验收。
 
 <details><summary>繁體中文 · 工作復原與更新體驗</summary>
 
@@ -126,6 +126,6 @@ Please report problems through this repository's Issues. Include the app version
 
 ---
 
-**安装与文件：**本版仅提供 Apple Silicon macOS。DMG 用于手动安装；同页的 `Shiguang_aarch64.app.tar.gz`、`.sig` 和 `latest.json` 供应用内更新使用。本版为 ad-hoc 签名，未获 Apple Developer ID 签名或 Apple 公证。GitHub 自动生成的 Source code 归档只是公开资料，不含拾光 App 源码，也不是安装包。
+<strong>安装与文件：</strong>本版仅提供 Apple Silicon macOS。DMG 用于手动安装；同页的 `Shiguang_aarch64.app.tar.gz`、`.sig` 和 `latest.json` 供应用内更新使用。本版为 ad-hoc 签名，未获 Apple Developer ID 签名或 Apple 公证。GitHub 自动生成的 Source code 归档只是公开资料，不含拾光 App 源码，也不是安装包。
 
 重要素材请保留原始卡和另一份可靠备份，确认副本后再格式化。问题请提交至 [Issues](https://github.com/Sorasukiawa/shiguang/issues)，不要上传原始素材、客户资料或私密路径。
