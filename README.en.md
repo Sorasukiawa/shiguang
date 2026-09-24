@@ -3,8 +3,8 @@
 <p align="center"><img src="./shiguang-icon.png" width="112" height="112" alt="Shiguang"></p>
 <h1 align="center">Shiguang</h1>
 <p align="center">Card offload · File copy · Project media import</p>
-<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>Download v0.2.0 · Apple Silicon Mac</strong></a><br>Free beta · 简体中文 / 繁體中文 / English / 日本語 · Light and dark themes</p>
-<p align="center"><a href="https://getshiguang.pages.dev/">Website & interactive demo</a> · <a href="https://getshiguang.pages.dev/guides/">User guides</a> · <a href="./RELEASE_NOTES_v0.2.0.md">Release notes</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">Report an issue</a></p>
+<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.1/Shiguang_0.2.1_aarch64.dmg"><strong>Download v0.2.1 · Apple Silicon Mac</strong></a><br>Free beta · 简体中文 / 繁體中文 / English / 日本語 · Light and dark themes</p>
+<p align="center"><a href="https://getshiguang.pages.dev/">Website & interactive demo</a> · <a href="https://getshiguang.pages.dev/guides/">User guides</a> · <a href="./RELEASE_NOTES_v0.2.1.md">Release notes</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">Report an issue</a></p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/Sorasukiawa/shiguang/328fb3cb25479f3d4c1dd1c168fa28d315e95f55/shiguang-overview.svg" width="100%" alt="Shiguang: Copy. Organize. Verify."></p>
 
@@ -24,20 +24,20 @@
 3. **Copy and check:** Follow persistent task progress, completed results and failed files.
 4. **Fill the gaps:** Recheck destinations and retry only unfinished files or copies.
 
-## A more complete workflow in v0.2.0
+## More rigorous copy verification in v0.2.1
 
-- **Check before writing:** Catch overlapping paths, nested destinations and insufficient combined space on a shared volume; confirm destination identity.
-- **Never overwrite existing files:** Report name conflicts and keep partial output distinct from completed copies.
-- **Recover each destination independently:** One drive can finish while another disconnects. Reconnect to fill missing copies.
-- **Recover after restarting the app:** Task receipts preserve completed results across forced exits, full disks and interrupted record commits.
-- **Protect APFS destinations:** Stop writing if a volume detaches or is replaced, avoiding the local directory behind its former mount point.
-- **Keep the original offload tools:** Dual backups, three verification modes, MHL and readable reports, duplicate prevention, project templates and archiving.
+- **Quick verification rereads every destination byte:** It recomputes XXH64 for each copy and compares it with the source hash calculated during copying.
+- **Full verification also rereads the source card:** This independent pass can expose unstable reads from the card, reader, or connection.
+- **File cache bypass is requested on macOS:** Copying and verification request uncached I/O; the result reports when a device cannot honor it.
+- **Validated with a physical camera card:** 86 files and about 11.93 GB from a Canon ExFAT SD card passed copying, quick verification, and full verification.
+- **Task reports and slow-drive response:** Filter and export offload, file-copy, and archive results as four-language HTML or PDF. Card preflight leaves the database connection shared by other pages available while waiting on storage.
+- **Existing safety guarantees remain:** No-overwrite writes, independent destination recovery, APFS destination protection, MHL, reports, and project archiving are unchanged.
 
-[v0.2.0](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.0) · [All releases](https://github.com/Sorasukiawa/shiguang/releases) · [Complete v0.2.0 release notes](./RELEASE_NOTES_v0.2.0.md)
+[v0.2.1](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.1) · [All releases](https://github.com/Sorasukiawa/shiguang/releases) · [Complete v0.2.1 release notes](./RELEASE_NOTES_v0.2.1.md)
 
 ## Before you download
 
-Available as a **free beta for Apple Silicon macOS only**. Intel Mac and Windows builds are not yet available for public download. Check your chip under ** → About This Mac**. Public v0.1.19 users can check for updates in Settings; updates do not install during offload, file copy or archiving.
+Available as a **free beta for Apple Silicon macOS only**. Intel Mac and Windows builds are not yet available for public download. Check your chip under ** → About This Mac**. Public v0.2.0 users can check for updates in Settings; updates do not install during offload, file copy or archiving.
 
 > [!IMPORTANT]
 > This build is ad-hoc signed, without Apple Developer ID signing or Apple notarization. Keep original cards and another reliable backup until copies are checked. Do not use the beta as the only safeguard for important media.
@@ -47,14 +47,14 @@ Validated scenarios include synthetic files, isolated databases, native Finder d
 ## Understanding verification
 
 - **No verification:** Relies only on whether the write operation reports an error. It is the fastest option and is not suitable for important media.
-- **Quick verification:** Checks that every file exists, can be read, and has the expected byte size. This detects missing files and obvious truncation.
-- **Full verification:** Rereads every byte from each destination, recalculates xxHash64, and compares it with the source hash captured during copying. Use this for important shoots and dual-destination backup workflows.
+- **Quick verification:** Rereads every byte from each destination, recalculates xxHash64, and compares it with the source hash captured during copying.
+- **Full verification:** Performs quick verification and independently rereads every source file to recalculate xxHash64, which can also expose unstable reads from the card, reader, or connection.
 
 Here, xxHash64 detects whether copied content is identical; it is not authentication or a cryptographic signature. Even after verification passes, open and spot-check critical media and confirm that at least two copies are usable before formatting a camera card.
 
 ## First launch on macOS
 
-The v0.2.0 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
+The v0.2.1 beta is not signed with an Apple Developer ID and is not notarized by Apple. macOS may therefore block its first launch:
 
 1. Download the DMG only from the [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) Releases page.
 2. Open the DMG and drag Shiguang into **Applications**.

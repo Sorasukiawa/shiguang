@@ -3,8 +3,8 @@
 <p align="center"><img src="./shiguang-icon.png" width="112" height="112" alt="拾光 Shiguang"></p>
 <h1 align="center">拾光 Shiguang</h1>
 <p align="center">カード取り込み · ファイルコピー · プロジェクト取り込み</p>
-<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>v0.2.0 をダウンロード · Apple Silicon Mac</strong></a><br>無料ベータ · 简体中文 / 繁體中文 / English / 日本語 · ライト／ダークテーマ</p>
-<p align="center"><a href="https://getshiguang.pages.dev/">公式サイト・操作イメージ</a> · <a href="https://getshiguang.pages.dev/guides/">使い方</a> · <a href="./RELEASE_NOTES_v0.2.0.md">更新内容</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">問題を報告</a></p>
+<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.1/Shiguang_0.2.1_aarch64.dmg"><strong>v0.2.1 をダウンロード · Apple Silicon Mac</strong></a><br>無料ベータ · 简体中文 / 繁體中文 / English / 日本語 · ライト／ダークテーマ</p>
+<p align="center"><a href="https://getshiguang.pages.dev/">公式サイト・操作イメージ</a> · <a href="https://getshiguang.pages.dev/guides/">使い方</a> · <a href="./RELEASE_NOTES_v0.2.1.md">更新内容</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">問題を報告</a></p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/Sorasukiawa/shiguang/328fb3cb25479f3d4c1dd1c168fa28d315e95f55/shiguang-overview.svg" width="100%" alt="Shiguang：コピー、整理、検証"></p>
 
@@ -24,20 +24,20 @@
 3. **コピーして確認：** 画面を移動しても進捗、完了結果、失敗したファイルを確認。
 4. **不足分を補う：** 保存先を再確認し、未完了のファイルやコピーだけを再試行。
 
-## v0.2.0 で、日々の素材移動をもっと確かに
+## v0.2.1 で、コピー検証をさらに厳密に
 
-- **書き込み前の確認：** パスの重複、保存先同士の包含、同一ボリュームの合計空き容量不足を検出し、保存先を確認。
-- **既存ファイルは上書きしない：** 同名の衝突を通知し、未完了の出力を成功として扱いません。
-- **保存先ごとに復旧：** 1台が切断されても別の保存先は続行。再接続後に不足分だけをコピー。
-- **App 再起動後の復旧：** 強制終了、容量不足、記録の中断でも、完了済みの結果を転送レシートから復旧。
-- **APFS 保存先の保護：** ボリュームの切断や置き換え時は書き込みを停止し、元のマウントポイント背後への誤書き込みを防止。
-- **従来の取り込み機能も継続：** 二重バックアップ、3つの検証方式、MHL と読みやすいレポート、重複防止、テンプレート、アーカイブ。
+- **高速検証で保存先を全バイト再読込：** 各コピーの XXH64 を再計算し、コピー時の元ファイルのハッシュと比較します。
+- **完全検証では元カードも再読込：** 保存先の確認とは別に入力元を全て読み直し、カード、カードリーダー、接続の不安定な読み取りを検出できます。
+- **macOS でファイルキャッシュ回避を要求：** コピーと検証で非キャッシュ I/O を要求し、装置が対応しない場合は結果に表示します。
+- **実物のカメラカードで確認：** Canon ExFAT SD カードの 86 ファイル、約 11.93 GB がコピー、高速検証、完全検証を通過しました。
+- **タスクレポートと低速ドライブへの対応：** 取り込み、ファイルコピー、アーカイブの結果を絞り込み、4言語の HTML／PDF に書き出せます。カードの事前確認がストレージを待つ間も、他の画面が共有するデータベース接続を占有しません。
+- **従来の安全機能を維持：** 上書き防止、保存先ごとの復旧、APFS 保護、MHL、レポート、プロジェクトのアーカイブは変わりません。
 
-[v0.2.0](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.0) · [すべてのバージョン](https://github.com/Sorasukiawa/shiguang/releases) · [v0.2.0 の全更新内容](./RELEASE_NOTES_v0.2.0.md)
+[v0.2.1](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.1) · [すべてのバージョン](https://github.com/Sorasukiawa/shiguang/releases) · [v0.2.1 の全更新内容](./RELEASE_NOTES_v0.2.1.md)
 
 ## ダウンロードの前に
 
-**Apple Silicon macOS 専用の無料ベータ版**です。Intel Mac 版と Windows 版は、まだ公開ダウンロードできません。チップは ** → この Mac について** で確認できます。公開 v0.1.19 は設定から更新可能。取り込み、ファイルコピー、アーカイブ中には更新をインストールしません。
+**Apple Silicon macOS 専用の無料ベータ版**です。Intel Mac 版と Windows 版は、まだ公開ダウンロードできません。チップは ** → この Mac について** で確認できます。公開 v0.2.0 は設定から更新可能。取り込み、ファイルコピー、アーカイブ中には更新をインストールしません。
 
 > [!IMPORTANT]
 > ad-hoc 署名で配布しており、Apple Developer ID 署名と Apple 公証はありません。コピーを確認するまで元のカードと別の確実なバックアップを保管し、重要な素材の唯一の保護手段として使用しないでください。
@@ -47,14 +47,14 @@
 ## 検証方式
 
 - **検証なし**：書き込み中のエラーの有無のみで判定します。最速ですが、重要な素材には適しません。
-- **高速検証**：各ファイルの存在、可読性、バイト数の一致を確認し、欠落や明らかな切り詰めを検出します。
-- **完全検証**：すべての保存先から全バイトを読み直し、xxHash64 を再計算してコピー時の元ハッシュと比較します。重要な撮影や二重バックアップに適します。
+- **高速検証**：すべての保存先から全バイトを読み直し、xxHash64 を再計算してコピー時の元ハッシュと比較します。
+- **完全検証**：高速検証に加え、すべての元ファイルを独立して再読込し、xxHash64 を再計算します。カード、カードリーダー、接続の不安定な読み取りも検出できます。
 
 xxHash64 はコピー内容の一致を検出するためのもので、認証や暗号学的署名ではありません。検証後も重要な素材を実際に開いて抽出確認し、少なくとも2つのコピーが使用できることを確認してください。
 
 ## macOS での初回起動
 
-v0.2.0 は Apple Developer ID で署名されておらず、Apple の公証も受けていません。そのため、macOS が初回起動をブロックする場合があります。
+v0.2.1 は Apple Developer ID で署名されておらず、Apple の公証も受けていません。そのため、macOS が初回起動をブロックする場合があります。
 
 1. DMG は [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) の Releases からのみダウンロードしてください。
 2. DMG を開き、「拾光」を「Applications / アプリケーション」フォルダーにドラッグします。

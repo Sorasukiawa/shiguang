@@ -3,8 +3,8 @@
 <p align="center"><img src="./shiguang-icon.png" width="112" height="112" alt="拾光 Shiguang"></p>
 <h1 align="center">拾光 Shiguang</h1>
 <p align="center">記憶卡轉存 · 檔案複製 · 專案素材匯入</p>
-<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>下載 v0.2.0 · Apple Silicon Mac</strong></a><br>免費內測 · 简体中文 / 繁體中文 / English / 日本語 · 淺色與深色主題</p>
-<p align="center"><a href="https://getshiguang.pages.dev/">官網與互動示意</a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="./RELEASE_NOTES_v0.2.0.md">完整更新說明</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">問題回報</a></p>
+<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.1/Shiguang_0.2.1_aarch64.dmg"><strong>下載 v0.2.1 · Apple Silicon Mac</strong></a><br>免費內測 · 简体中文 / 繁體中文 / English / 日本語 · 淺色與深色主題</p>
+<p align="center"><a href="https://getshiguang.pages.dev/">官網與互動示意</a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="./RELEASE_NOTES_v0.2.1.md">完整更新說明</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">問題回報</a></p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/Sorasukiawa/shiguang/328fb3cb25479f3d4c1dd1c168fa28d315e95f55/shiguang-overview.svg" width="100%" alt="拾光 Shiguang：拷貝、整理與校驗"></p>
 
@@ -24,20 +24,20 @@
 3. **複製並檢查**：查看持續顯示的工作進度、完成結果與失敗檔案。
 4. **有缺失就補齊**：重新檢查目的地後，只重試未完成的檔案或副本。
 
-## v0.2.0，讓日常素材流轉更完整
+## v0.2.1，更嚴謹地確認每份副本
 
-- **寫入前先檢查**：拒絕路徑重疊、目的地互相包含與同卷合計空間不足，並確認目的地身分。
-- **既有檔案不覆寫**：清楚回報同名衝突，不將異常半成品視為成功結果。
-- **每個目的地獨立復原**：一個目的地離線，另一個仍可繼續；重連後只補齊缺失副本。
-- **App 重啟後繼續復原**：工作收據保留已完成結果，涵蓋強制結束、磁碟寫滿與記錄提交中斷等情況。
-- **APFS 目的地保護**：磁碟卸載或被替換時停止寫入，避免誤寫掛載點背後的本機目錄。
-- **原有轉存能力繼續保留**：雙備份、三種驗證、MHL 與可讀報告、防重複轉存、專案範本與封存。
+- **快速驗證完整回讀目的地**：逐位元組讀取每個目的檔案，重新計算 XXH64，並與複製時的來源雜湊比對。
+- **完整驗證再次讀取來源卡**：除目的地回讀外，獨立重讀全部來源檔案，可發現記憶卡、讀卡機或連線讀取不穩定。
+- **盡量繞過系統檔案快取**：macOS 會為複製與驗證要求非快取 I/O；裝置不支援時會在結果中清楚提示。
+- **真實相機卡驗收**：Canon ExFAT SD 卡的 86 個檔案、約 11.93 GB 素材已通過複製、快速驗證與完整驗證。
+- **工作報告與慢碟回應**：轉存、檔案複製及封存記錄可篩選並匯出四語言 HTML／PDF；記憶卡預檢等待儲存裝置時不再佔用其他頁面共用的資料庫連線。
+- **既有安全邊界保持**：不覆寫檔案、多目的地隔離復原、APFS 目的地保護、MHL、報告與專案封存均維持不變。
 
-[v0.2.0](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.0) · [查看全部版本](https://github.com/Sorasukiawa/shiguang/releases) · [閱讀 v0.2.0 完整發布說明](./RELEASE_NOTES_v0.2.0.md)
+[v0.2.1](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.1) · [查看全部版本](https://github.com/Sorasukiawa/shiguang/releases) · [閱讀 v0.2.1 完整發布說明](./RELEASE_NOTES_v0.2.1.md)
 
 ## 下載與使用前須知
 
-僅提供 **Apple Silicon macOS 免費內測版**，Intel Mac 與 Windows 版尚未提供公開下載。可在 ** → 關於這台 Mac** 查看晶片。公開 v0.1.19 可在設定檢查更新；轉存、檔案複製或封存執行時不會安裝更新。
+僅提供 **Apple Silicon macOS 免費內測版**，Intel Mac 與 Windows 版尚未提供公開下載。可在 ** → 關於這台 Mac** 查看晶片。公開 v0.2.0 可在設定檢查更新；轉存、檔案複製或封存執行時不會安裝更新。
 
 > [!IMPORTANT]
 > 目前安裝包採用 ad-hoc 簽署，尚無 Apple Developer ID 簽署或 Apple 公證。處理重要素材時，請保留原卡與另一份可靠備份，確認副本後再格式化；勿將內測版作為唯一保障。
@@ -47,14 +47,14 @@
 ## 如何理解檢驗
 
 - **不檢驗**：只根據寫入過程是否報錯，速度最快，不適合重要素材。
-- **快速檢驗**：逐一檢查檔案是否存在、可讀，以及位元組數是否一致，用來發現遺漏或明顯截斷。
-- **完全檢驗**：從每個目標磁碟重新讀取所有位元組，重算 xxHash64 並與複製時的來源雜湊值比對，適合重要拍攝或二重備份流程。
+- **快速檢驗**：從每個目標磁碟重新讀取所有位元組，重算 xxHash64，並與複製時的來源雜湊值比對。
+- **完全檢驗**：完成快速檢驗後，再獨立重讀全部來源檔案並重算 xxHash64，可進一步發現來源卡、讀卡機或連線的不穩定讀取。
 
 xxHash64 在這裡用來檢測複製內容是否一致，不是身分驗證或加密簽章。即使檢驗通過，也建議在格式化相機卡前人工抽查關鍵素材，並確認至少兩份副本可用。
 
 ## macOS 首次開啟
 
-v0.2.0 尚未使用 Apple Developer ID 簽署，也尚未通過 Apple 公證。macOS 可能因此擋下首次啟動：
+v0.2.1 尚未使用 Apple Developer ID 簽署，也尚未通過 Apple 公證。macOS 可能因此擋下首次啟動：
 
 1. 只從 [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) 的 Releases 下載 DMG。
 2. 開啟 DMG，將「拾光」拖曳到「Applications / 應用程式」資料夾。

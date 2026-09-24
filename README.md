@@ -3,8 +3,8 @@
 <p align="center"><img src="./shiguang-icon.png" width="112" height="112" alt="拾光 Shiguang"></p>
 <h1 align="center">拾光 Shiguang</h1>
 <p align="center">相机卡拷卡 · 文件拷贝 · 项目素材导入</p>
-<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.0/Shiguang_0.2.0_aarch64.dmg"><strong>下载 v0.2.0 · Apple Silicon Mac</strong></a><br>免费内测 · 简体中文 / 繁體中文 / English / 日本語 · 浅色与深色主题</p>
-<p align="center"><a href="https://getshiguang.pages.dev/">官网与交互演示</a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="./RELEASE_NOTES_v0.2.0.md">完整更新说明</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">问题反馈</a></p>
+<p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.1/Shiguang_0.2.1_aarch64.dmg"><strong>下载 v0.2.1 · Apple Silicon Mac</strong></a><br>免费内测 · 简体中文 / 繁體中文 / English / 日本語 · 浅色与深色主题</p>
+<p align="center"><a href="https://getshiguang.pages.dev/">官网与交互演示</a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="./RELEASE_NOTES_v0.2.1.md">完整更新说明</a> · <a href="https://github.com/Sorasukiawa/shiguang/issues">问题反馈</a></p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/Sorasukiawa/shiguang/328fb3cb25479f3d4c1dd1c168fa28d315e95f55/shiguang-overview.svg" width="100%" alt="拾光 Shiguang：拷贝、整理与校验"></p>
 
@@ -24,20 +24,20 @@
 3. **拷贝并检查**：查看持续显示的任务进度、完成结果与失败文件。
 4. **有缺失就补齐**：重新检查目标后，只重试未完成的文件或副本。
 
-## v0.2.0，让日常素材流转更完整
+## v0.2.1，更严谨地确认每份副本
 
-- **写入前先检查**：拦截路径重叠、目的地互相包含和同卷合计空间不足，并确认目标身份。
-- **已有文件不覆盖**：同名冲突明确报告，异常半成品不被视为成功结果。
-- **每个目标独立恢复**：一个目标掉线，另一个可继续；重连后只补齐缺失副本。
-- **App 重启后继续恢复**：任务收据记录已完成结果，覆盖强退、磁盘写满与记录提交中断等情况。
-- **APFS 目标保护**：磁盘卸载或被替换时停止对该目标写入，避免误写原挂载点背后的本机目录。
-- **原有拷卡能力继续保留**：双备份、三种校验、MHL 与可读报告、防重拷、项目模板与归档。
+- **快速校验完整回读目标**：逐字节读取每个目标文件，重新计算 XXH64，并与拷贝时的源哈希比对。
+- **完整校验再次读取源卡**：在目标回读之外独立重读全部源文件，可发现源卡、读卡器或连接的不稳定读取。
+- **尽量绕过系统文件缓存**：macOS 会为拷贝和校验请求非缓存 I/O；设备不支持时会在结果中明确提示。
+- **真实相机卡验收**：Canon ExFAT SD 卡的 86 个文件、约 11.93 GB 素材通过拷贝、快速校验和完整校验。
+- **任务报告与慢盘响应**：拷卡、文件拷贝和归档记录可筛选并导出四语言 HTML／PDF；拷卡预检等待存储设备时不再占用其他页面共用的数据库连接。
+- **原有安全边界继续保留**：不覆盖已有文件、多目标隔离恢复、APFS 目标保护、MHL、报告和项目归档保持不变。
 
-[v0.2.0](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.0) · [查看全部版本](https://github.com/Sorasukiawa/shiguang/releases) · [阅读 v0.2.0 完整发布说明](./RELEASE_NOTES_v0.2.0.md)
+[v0.2.1](https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.1) · [查看全部版本](https://github.com/Sorasukiawa/shiguang/releases) · [阅读 v0.2.1 完整发布说明](./RELEASE_NOTES_v0.2.1.md)
 
 ## 下载与使用前须知
 
-仅提供 **Apple Silicon macOS 免费内测版**，Intel Mac 与 Windows 版尚未提供公开下载。可在 ** → 关于本机** 查看芯片类型。公开 v0.1.19 可在设置中检查更新；拷卡、文件拷贝或归档运行时不会安装更新。
+仅提供 **Apple Silicon macOS 免费内测版**，Intel Mac 与 Windows 版尚未提供公开下载。可在 ** → 关于本机** 查看芯片类型。公开 v0.2.0 可在设置中检查更新；拷卡、文件拷贝或归档运行时不会安装更新。
 
 > [!IMPORTANT]
 > 当前安装包采用 ad-hoc 签名，尚无 Apple Developer ID 签名或 Apple 公证。处理重要素材时，请保留原卡及另一份可靠备份，确认副本后再格式化；不要把内测版作为唯一保障。
@@ -47,14 +47,14 @@
 ## 如何理解校验
 
 - **不校验**：只依据写入过程是否报错，最快，不适合重要素材。
-- **快速校验**：逐文件检查存在、可读和字节数一致，发现漏拷或明显截断。
-- **完整校验**：从每个目标盘重读全部字节，重算 xxHash64 并与拷贝时的源哈希比对，适合重要拍摄或双备份流程。
+- **快速校验**：从每个目标盘重读全部字节，重算 xxHash64 并与拷贝时的源哈希比对。
+- **完整校验**：完成快速校验后，再独立重读一次全部源文件并重算 xxHash64，可进一步发现源卡、读卡器或连接的不稳定读取。
 
 xxHash64 用于检测拷贝内容是否一致，不是身份认证或加密签名。即使校验通过，也建议在格式化相机卡前人工抽查关键素材，并确认至少两份副本可用。
 
 ## macOS 首次打开
 
-v0.2.0 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
+v0.2.1 尚未使用 Apple Developer ID 签名，也未经过 Apple 公证。macOS 可能因此拦截首次启动：
 
 1. 只从 [Sorasukiawa/shiguang](https://github.com/Sorasukiawa/shiguang) 的 Releases 下载 DMG。
 2. 打开 DMG，将“拾光”拖入“Applications / 应用程序”文件夹。
