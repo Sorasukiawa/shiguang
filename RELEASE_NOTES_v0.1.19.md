@@ -1,3 +1,37 @@
+# 拾光 Shiguang v0.1.19 · 编辑、加载与动效改进
+
+**历史版本 / Historical release** · 改善预设编辑草稿恢复、加载失败重试和界面动效；设置页增加官网与指南入口。NAS 断连与第三方同步目录的既有边界仍在。
+
+**[下载本版本 DMG · Apple Silicon Mac](https://github.com/Sorasukiawa/shiguang/releases/download/v0.1.19/Shiguang_0.1.19_aarch64.dmg)** · [安装指南](https://getshiguang.pages.dev/guides/) · [全部版本](https://github.com/Sorasukiawa/shiguang/blob/main/VERSIONS.md)
+
+**历史版本提示：**本页下载固定为此版本。若已安装的旧版没有更新通道，请结束任务、退出 App 后用目标版本 DMG 手动升级。
+
+<details><summary>繁體中文 · 編輯、載入與動效改善</summary>
+
+改善預設編輯草稿復原、載入失敗重試和介面動效；設定頁加入官網與指南入口。NAS 斷線與第三方同步資料夾的既有邊界仍在。
+
+僅提供 Apple Silicon macOS 免費測試版，採用 ad-hoc 簽署，尚無 Apple Developer ID 簽署或公證。DMG 供手動安裝；重要素材請保留原卡及另一份可靠備份。
+
+</details>
+
+<details><summary>English · Editing, loading & motion</summary>
+
+Improves preset draft recovery, retries for loading failures, and interface motion. Settings now links to the website and guides. Existing NAS disconnect and third-party sync-folder limits remain.
+
+Apple Silicon macOS free beta only. This build is ad-hoc signed, without Apple Developer ID signing or notarization. Use the DMG for manual installation, and keep the original card plus another reliable backup for important media.
+
+</details>
+
+<details><summary>日本語 · 編集・読み込み・動きの改善</summary>
+
+設定編集時の下書き復元、読み込み失敗時の再試行、画面の動きを改善。設定画面に公式サイトとガイドへのリンクを追加。NAS 切断と外部同期フォルダーの既存の制限は残ります.
+
+Apple Silicon macOS 向けの無料ベータ版のみです。ad-hoc 署名で、Apple Developer ID 署名と公証はありません。手動インストールには DMG を使い、大切な素材は元カードと別の信頼できるバックアップを残してください。
+
+</details>
+
+<details><summary>详细发布记录（四语言）</summary>
+
 [简体中文](#简体中文) | [繁體中文](#繁體中文) | [English](#english) | [日本語](#日本語)
 
 ## 简体中文
@@ -55,3 +89,11 @@ The app remains ad-hoc signed, without Apple Developer ID signing or notarizatio
 Apple Silicon macOS 専用です。公開版 v0.1.18 は設定から更新を確認できます。更新先のない旧版やローカル開発版は、タスクと App を終了してから DMG で置き換えてください。更新前に重要なプロジェクトと素材をバックアップしてください。
 
 ad-hoc 署名を使用し、Apple Developer ID 署名・Apple 公証はありません。既存の NAS SMB 切断と Baidu 自動同期の分離に関する制限は未解決です。元のカードと別の信頼できるバックアップを保管してください。
+
+</details>
+
+---
+
+**安装与文件：**本版仅提供 Apple Silicon macOS。DMG 用于手动安装；同页的 `Shiguang_aarch64.app.tar.gz`、`.sig` 和 `latest.json` 供应用内更新使用。本版为 ad-hoc 签名，未获 Apple Developer ID 签名或 Apple 公证。GitHub 自动生成的 Source code 归档只是公开资料，不含拾光 App 源码，也不是安装包。
+
+重要素材请保留原始卡和另一份可靠备份，确认副本后再格式化。问题请提交至 [Issues](https://github.com/Sorasukiawa/shiguang/issues)，不要上传原始素材、客户资料或私密路径。
