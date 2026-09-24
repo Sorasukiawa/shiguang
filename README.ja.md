@@ -7,9 +7,9 @@
 <p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.1/Shiguang_0.2.1_aarch64.dmg"><strong>v0.2.1 をダウンロード · Apple Silicon Mac</strong></a> · <a href="https://getshiguang.pages.dev/guides/">使い方</a> · <a href="https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.1">更新内容</a></p>
 <p align="center">無料ベータ版 · 简体中文 / 繁體中文 / English / 日本語 · ライト／ダークテーマ</p>
 
-![架空の撮影プロジェクトとバックアップ状態を表示する拾光のプロジェクト画面。ダークテーマ、中国語 UI](./projects-v0.2.1-dark.png)
+![3 件のサンプル撮影プロジェクトを表示する拾光 v0.2.1 Mac のプロジェクト画面。ダークテーマ、中国語 UI](./projects-v0.2.1-native-macos.png)
 
-*表示内容はサンプルです。隔離したブラウザー環境で拾光の UI を描画した画像であり、ネイティブのファイル操作を検証した証拠ではありません。*
+*v0.2.1 Apple Silicon Mac のネイティブウィンドウを撮影。プロジェクト名とデータは隔離したデモ環境のサンプルです。*
 
 ## 撮影素材の流れを明確に
 
@@ -24,9 +24,9 @@
 
 ### ファイルコピー
 
-![拾光のファイルコピー画面。元ファイル、保存先、検証方法を示す中国語 UI のデモ](./file-copy-v0.2.0-demo.png)
+![サンプル元フォルダー、2 つの保存先、完全検証を表示する拾光 v0.2.1 Mac のファイルコピー画面。中国語 UI](./file-copy-v0.2.1-native-macos.png)
 
-*v0.2.0 からの画面フローのデモ。パスとファイルはサンプルです。*
+*v0.2.1 Apple Silicon Mac のネイティブウィンドウを撮影。パスとファイルは隔離したデモ環境のサンプルです。*
 
 ### 作業レポート
 

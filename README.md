@@ -7,9 +7,9 @@
 <p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.1/Shiguang_0.2.1_aarch64.dmg"><strong>下载 v0.2.1 · Apple Silicon Mac</strong></a> · <a href="https://getshiguang.pages.dev/guides/">使用指南</a> · <a href="https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.1">本次更新</a></p>
 <p align="center">免费内测 · 简体中文 / 繁體中文 / English / 日本語 · 浅色与深色主题</p>
 
-![拾光项目工作台，展示合成的摄影项目与备份状态；深色主题](./projects-v0.2.1-dark.png)
+![拾光 v0.2.1 Mac 项目工作台，展示三个示例摄影项目；深色主题](./projects-v0.2.1-native-macos.png)
 
-*示例项目与数据；画面由拾光界面在隔离浏览器环境渲染，不代表原生文件操作验收。*
+*v0.2.1 Apple Silicon Mac 实机窗口截图；项目名称与数据均为隔离演示环境中的示例。*
 
 ## 一条清楚的素材工作流
 
@@ -24,9 +24,9 @@
 
 ### 文件拷贝
 
-![拾光文件拷贝界面演示：来源、目的地与校验选项](./file-copy-v0.2.0-demo.png)
+![拾光 v0.2.1 Mac 文件拷贝界面：示例来源、双目的地与完整校验](./file-copy-v0.2.1-native-macos.png)
 
-*v0.2.0 起提供的界面流程演示，路径与文件均为示例。*
+*v0.2.1 Apple Silicon Mac 实机窗口截图；路径与文件均为隔离演示环境中的示例。*
 
 ### 任务报告
 
