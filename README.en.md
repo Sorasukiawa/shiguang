@@ -7,9 +7,9 @@
 <p align="center"><a href="https://github.com/Sorasukiawa/shiguang/releases/download/v0.2.1/Shiguang_0.2.1_aarch64.dmg"><strong>Download v0.2.1 · Apple Silicon Mac</strong></a> · <a href="https://getshiguang.pages.dev/guides/">User guides</a> · <a href="https://github.com/Sorasukiawa/shiguang/releases/tag/v0.2.1">What's new</a></p>
 <p align="center">Free beta · 简体中文 / 繁體中文 / English / 日本語 · Light and dark themes</p>
 
-![Shiguang project workspace with fictional photography projects and backup status; dark theme, Chinese interface](./projects-v0.2.1-dark.png)
+![Shiguang v0.2.1 Mac project workspace with three sample photography projects; dark theme, Chinese interface](./projects-v0.2.1-native-macos.png)
 
-*Illustrative projects and data, rendered from the Shiguang UI in an isolated browser. This image does not establish native file-operation testing.*
+*Native v0.2.1 Apple Silicon Mac window capture. Project names and data come from an isolated demo environment.*
 
 ## A clear path for every shoot
 
@@ -24,9 +24,9 @@ Shiguang **never overwrites existing files**. Multi-destination results are trac
 
 ### File copy
 
-![Shiguang file-copy workflow showing sources, destinations, and verification options; Chinese interface](./file-copy-v0.2.0-demo.png)
+![Shiguang v0.2.1 Mac file-copy screen with a sample source, two destinations, and full verification; Chinese interface](./file-copy-v0.2.1-native-macos.png)
 
-*UI workflow demonstration for a feature introduced in v0.2.0. Paths and files are examples.*
+*Native v0.2.1 Apple Silicon Mac window capture. Paths and files come from an isolated demo environment.*
 
 ### Task reports
 
