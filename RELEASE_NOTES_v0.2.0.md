@@ -30,7 +30,7 @@ Apple Silicon macOS 向けの無料ベータ版のみです。ad-hoc 署名で�
 
 </details>
 
-![v0.2.0 文件拷贝界面演示，使用示例路径与文件](https://raw.githubusercontent.com/Sorasukiawa/shiguang/main/file-copy-v0.2.0-demo.png)
+![v0.2.0 文件拷贝界面演示，使用示例路径与文件](https://raw.githubusercontent.com/Sorasukiawa/shiguang/64ca6e5971d1245c2da1a4a3040bed1c13d0fee5/file-copy-v0.2.0-demo.png)
 
 *界面流程演示；示例路径与文件。*
 

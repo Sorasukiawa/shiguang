@@ -38,7 +38,7 @@ NAS／SMB の切断後は復旧に時間がかかる場合があります。外�
 
 </details>
 
-<img src="https://raw.githubusercontent.com/Sorasukiawa/shiguang/main/report-v0.2.1-synthetic.png" width="480" alt="v0.2.1 PDF 任务报告示例，全部为合成数据">
+<img src="https://raw.githubusercontent.com/Sorasukiawa/shiguang/64ca6e5971d1245c2da1a4a3040bed1c13d0fee5/report-v0.2.1-synthetic.png" width="480" alt="v0.2.1 PDF 任务报告示例，全部为合成数据">
 
 *报告示例；全部内容为合成数据。*
 
